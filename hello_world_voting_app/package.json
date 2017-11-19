@@ -5,10 +5,12 @@
     "license": "MIT",
     "scripts": {
         "contract:deploy": "node deploy-contract.js",
-        "blockchain": "node_modules/.bin/testrpc"
+        "blockchain": "node_modules/.bin/testrpc",
+        "start": "node_modules/.bin/http-server ./voting"
     },
     "dependencies": {
         "ethereumjs-testrpc": "^6.0.1",
+        "http-server": "^0.10.0",
         "solc": "^0.4.18",
         "web3": "^0.20.1"
     }
