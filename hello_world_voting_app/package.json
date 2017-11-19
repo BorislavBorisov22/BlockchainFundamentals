@@ -1,0 +1,15 @@
+{
+    "name": "hello_world_voting_app",
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+        "contract:deploy": "node deploy-contract.js",
+        "blockchain": "node_modules/.bin/testrpc"
+    },
+    "dependencies": {
+        "ethereumjs-testrpc": "^6.0.1",
+        "solc": "^0.4.18",
+        "web3": "^0.20.1"
+    }
+}
