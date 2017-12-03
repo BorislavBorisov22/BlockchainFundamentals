@@ -1,4 +1,6 @@
 const Web3 = require('web3');
+const solc = require('solc');
+const deployContract = require('./deploy-contract');
 
 const web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:8545'));
 
@@ -18,5 +20,6 @@ const bobAccount = web3.eth.accounts[1];
 // transaction from alice to bob :)
 web3.eth.sendTransaction({ from: aliceAccount, to: bobAccount, value: web3.toWei(10, 'ether') });
 
-console.log(getBalanceInEther(web3, aliceAccount));
-console.log(getBalanceInEther(web3, bobAccount));
+const contract = deployContract(bobAccount);
+console.log(contract, 'deployed contract');
+// const resultString = contract.sayHi();
