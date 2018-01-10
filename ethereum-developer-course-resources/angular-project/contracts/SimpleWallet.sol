@@ -2,8 +2,20 @@ pragma solidity ^0.4.16;
 
 
 contract SimpleWallet {
+
+    struct WithdrawStruct {
+        address to;
+        uint amount;
+    }
+
+    struct Senders {
+        bool isAllowed;
+        uint sendsCount;
+        mapping(uint => WithdrawStruct) withdraws;
+    }
+
     address owner;
-    mapping(address => bool) isAllowedToSendFunds;
+    mapping(address => Senders) isAllowedToSendFunds;
 
     event Deposit(address _sender, uint _amount);
     event Withdraw(address _sender, uint _amount, address _beneficiary);
@@ -13,7 +25,7 @@ contract SimpleWallet {
     }
 
     modifier isAllowedToSend {
-        if (msg.sender != owner && !isAllowedToSendFunds[msg.sender]) {
+        if (msg.sender != owner && !isAllowedToSendFunds[msg.sender].isAllowed) {
             revert();
         } else {
             _;
@@ -39,6 +51,9 @@ contract SimpleWallet {
                 revert();
             }
 
+            isAllowedToSendFunds[msg.sender].sendsCount++;
+            isAllowedToSendFunds[msg.sender].withdraws[isAllowedToSendFunds[msg.sender].sendsCount].to = _receiver;
+            isAllowedToSendFunds[msg.sender].withdraws[isAllowedToSendFunds[msg.sender].sendsCount].amount = _amount;            
             Withdraw(msg.sender, _amount, _receiver);
         } else {
             revert();
@@ -46,15 +61,15 @@ contract SimpleWallet {
     }
 
     function allowAdressToSendFunds(address _address) ownerOnly public {
-        isAllowedToSendFunds[_address] = true;
+        isAllowedToSendFunds[_address].isAllowed = true;
     }
 
     function disallowAdressToSendFunds(address _address) ownerOnly public {
-        isAllowedToSendFunds[_address] = false;
+        isAllowedToSendFunds[_address].isAllowed = false;
     }
 
     function isAddressAllowedToSend(address _address) public constant returns (bool) {
-        return isAllowedToSendFunds[_address] || _address == owner;
+        return isAllowedToSendFunds[_address].isAllowed || _address == owner;
     }
 
     function killWaller() ownerOnly public {
