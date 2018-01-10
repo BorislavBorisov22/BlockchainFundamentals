@@ -1,5 +1,5 @@
-const SimpleWallet = artifact.require('./SimpleWallet.sol');
+const SimpleWallet = artifacts.require('./SimpleWallet.sol');
 
 module.exports = function(deployer) {
-    deployer.deply(SimpleWallet);
+    deployer.deploy(SimpleWallet);
 };
