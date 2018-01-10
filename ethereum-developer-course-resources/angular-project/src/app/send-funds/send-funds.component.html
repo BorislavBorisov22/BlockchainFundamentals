@@ -1,0 +1,6 @@
+<h1>Send funds</h1>
+<form #f="ngForm" (ngSubmit)="this.onSubmit()">
+    <label>Send to address: <input type="text" [(ngModel)]="this.model.to" name="to"></label>
+    <label>Amount: <input type="text" [(ngModel)]="this.model.amount" name="amount"></label>
+    <input type="submit" value="Send">
+</form>

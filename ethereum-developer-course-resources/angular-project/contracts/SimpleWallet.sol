@@ -28,6 +28,10 @@ contract SimpleWallet {
         }
     }
 
+    function donate() payable {
+        Deposit(msg.sender, msg.value);
+    }
+
     function sendFunds(uint _amount, address _receiver) isAllowedToSend public returns (uint) {
         if (this.balance >= _amount) {
             bool sendSuccess = _receiver.send(_amount);
@@ -41,16 +45,16 @@ contract SimpleWallet {
         }
     }
 
-    function allowAdressToSendMoney(address _address) ownerOnly public {
+    function allowAdressToSendFunds(address _address) ownerOnly public {
         isAllowedToSendFunds[_address] = true;
     }
 
-    function disallowAdressToSendMoney(address _address) ownerOnly public {
+    function disallowAdressToSendFunds(address _address) ownerOnly public {
         isAllowedToSendFunds[_address] = false;
     }
 
-    function isAddressAllowedToSend() public constant returns (bool) {
-        return isAllowedToSendFunds[msg.sender] || msg.sender == owner;
+    function isAddressAllowedToSend(address _address) public constant returns (bool) {
+        return isAllowedToSendFunds[_address] || _address == owner;
     }
 
     function killWaller() ownerOnly public {
