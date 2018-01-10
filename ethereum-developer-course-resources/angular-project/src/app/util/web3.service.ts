@@ -19,6 +19,10 @@ export class Web3Service {
     });
   }
 
+  public getAccounts() {
+    return this.web3.eth.accounts;
+  }
+
   public bootstrapWeb3() {
     // Checking if Web3 has been injected by the browser (Mist/MetaMask)
     if (typeof window.web3 !== 'undefined') {

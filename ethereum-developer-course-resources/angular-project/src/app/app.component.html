@@ -1,3 +1,17 @@
-<h1>Angular Truffle Box</h1>
+<h1>Simple Wallet App</h1>
 
-<router-outlet></router-outlet>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Simple Wallet</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a href="/send-funds">Send Funds</a></li>
+            <li><a href="/events">Events</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main style="padding: 10px;">
+    <router-outlet></router-outlet>
+</main>
