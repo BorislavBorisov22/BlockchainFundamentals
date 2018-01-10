@@ -1,3 +1,6 @@
+pragma solidity ^0.4.16;
+
+
 contract SimpleWallet {
     address owner;
     mapping(address => bool) isAllowedToSendFunds;
