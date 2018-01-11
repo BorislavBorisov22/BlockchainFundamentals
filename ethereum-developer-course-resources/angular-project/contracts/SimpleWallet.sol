@@ -75,4 +75,8 @@ contract SimpleWallet {
     function killWaller() ownerOnly public {
         selfdestruct(owner);
     }
+
+    function getOwner() constant returns (address) {
+        return owner;
+    }
 }

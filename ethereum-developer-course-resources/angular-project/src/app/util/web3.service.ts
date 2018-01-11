@@ -1,3 +1,4 @@
+import { ContractAbis } from './../constants/contract-abi.constants';
 import {Injectable} from '@angular/core';
 import Web3 from 'web3';
 import {default as contract} from 'truffle-contract';
@@ -10,12 +11,13 @@ export class Web3Service {
   private web3: Web3;
   private accounts: string[];
   public ready = false;
-  public MetaCoin: any;
+  public SimpleWallet: any;
   public accountsObservable = new Subject<string[]>();
 
   constructor() {
     window.addEventListener('load', (event) => {
       this.bootstrapWeb3();
+      this.initializeSimpleWalletContract();
     });
   }
 
@@ -53,22 +55,43 @@ export class Web3Service {
 
   }
 
+  private initializeSimpleWalletContract(): void {
+    const abi = ContractAbis.SimpleWalletAbi;
+
+    // tslint:disable-next-line
+    const SimpleWalletContract = new this.web3.eth.Contract(abi);
+    SimpleWalletContract.options.address =
+    '0xd4eabd8e94e450d880f698c0889c1426af90321d';
+    SimpleWalletContract.methods
+        .getOwner()
+        .call({from: this.web3.eth.accounts[0]})
+        .then(owner => {
+        console.log(owner, 'owner');
+      });
+
+      SimpleWalletContract.methods.isAddressAllowedToSend('0x79F9fF48814CCAc9B6347aB013cdDdDaA8F6a4f6')
+        .call({from: this.web3.eth.accounts[0], gasPrice: 3000000})
+        .then(isAllowed => {
+          console.log(isAllowed);
+        });
+  }
+
   private refreshAccounts() {
     this.web3.eth.getAccounts((err, accs) => {
-      console.log('Refreshing accounts');
+      // console.log('Refreshing accounts');
       if (err != null) {
-        console.warn('There was an error fetching your accounts.');
+        // console.warn('There was an error fetching your accounts.');
         return;
       }
 
       // Get the initial account balance so it can be displayed.
       if (accs.length === 0) {
-        console.warn('Couldn\'t get any accounts! Make sure your Ethereum client is configured correctly.');
+        // console.warn('Couldn\'t get any accounts! Make sure your Ethereum client is configured correctly.');
         return;
       }
 
       if (!this.accounts || this.accounts.length !== accs.length || this.accounts[0] !== accs[0]) {
-        console.log('Observed new accounts');
+        // console.log('Observed new accounts');
 
         this.accountsObservable.next(accs);
         this.accounts = accs;
