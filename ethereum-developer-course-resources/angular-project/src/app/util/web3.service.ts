@@ -3,7 +3,6 @@ import {Injectable} from '@angular/core';
 import Web3 from 'web3';
 import {default as contract} from 'truffle-contract';
 import {Subject} from 'rxjs/Rx';
-
 declare let window: any;
 
 @Injectable()
@@ -61,7 +60,7 @@ export class Web3Service {
     // tslint:disable-next-line
     const SimpleWalletContract = new this.web3.eth.Contract(abi);
     SimpleWalletContract.options.address =
-    '0xd4eabd8e94e450d880f698c0889c1426af90321d';
+    '0xe98f9c2ccbbb0ae153f41e2360aec6fbdb1892ba';
     SimpleWalletContract.methods
         .getOwner()
         .call({from: this.web3.eth.accounts[0]})
@@ -69,7 +68,7 @@ export class Web3Service {
         console.log(owner, 'owner');
       });
 
-      SimpleWalletContract.methods.isAddressAllowedToSend('0x79F9fF48814CCAc9B6347aB013cdDdDaA8F6a4f6')
+      SimpleWalletContract.methods.isAddressAllowedToSend('0x4d1774B28F2Fd4f0937A0a11fe3D151018f13Cd0')
         .call({from: this.web3.eth.accounts[0], gasPrice: 3000000})
         .then(isAllowed => {
           console.log(isAllowed);
