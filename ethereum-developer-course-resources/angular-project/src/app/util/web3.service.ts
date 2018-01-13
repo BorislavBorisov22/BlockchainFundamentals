@@ -3,6 +3,7 @@ import {Injectable} from '@angular/core';
 import Web3 from 'web3';
 import {default as contract} from 'truffle-contract';
 import {Subject} from 'rxjs/Rx';
+import {Contract} from 'web3/types';
 declare let window: any;
 
 @Injectable()
@@ -10,14 +11,22 @@ export class Web3Service {
   private web3: Web3;
   private accounts: string[];
   public ready = false;
-  public SimpleWallet: any;
+  public SimpleWallet: Contract;
   public accountsObservable = new Subject<string[]>();
 
+  private simpleWalletContract: any;
+
   constructor() {
-    window.addEventListener('load', (event) => {
       this.bootstrapWeb3();
       this.initializeSimpleWalletContract();
-    });
+  }
+
+  public async currentAccountBalance(): Promise<Number> {
+    const coinbase =  await this.web3.eth.getCoinbase();
+    console.log(coinbase, 'coinbase');
+    const balance = await this.web3.eth.getBalance(coinbase);
+    console.log(balance, 'balance');
+    return this.web3.utils.fromWei(balance, 'ether');
   }
 
   public getAccounts() {
@@ -51,27 +60,36 @@ export class Web3Service {
     const contractAbstraction = contract(artifacts);
     contractAbstraction.setProvider(this.web3.currentProvider);
     return contractAbstraction;
-
   }
 
   private initializeSimpleWalletContract(): void {
     const abi = ContractAbis.SimpleWalletAbi;
 
-    // tslint:disable-next-line
-    const SimpleWalletContract = new this.web3.eth.Contract(abi);
-    SimpleWalletContract.options.address =
-    '0xe98f9c2ccbbb0ae153f41e2360aec6fbdb1892ba';
-    SimpleWalletContract.methods
+    this.simpleWalletContract = new this.web3.eth.Contract(abi);
+    this.simpleWalletContract.options.address =
+    '0x345ca3e014aaf5dca488057592ee47305d9b3e10';
+  }
+
+
+  public async sendFundsToWallet(etherAmount: Number) {
+    const weiToSend = this.web3.utils.toWei(etherAmount, 'ether');
+    const coinbase = await this.web3.eth.getCoinbase();
+
+    return this.simpleWalletContract.methods.donate().send({from: coinbase, gasPrice: 3000000, value: weiToSend});
+  }
+
+  private testOwnerAndIsAllowed() {
+     this.simpleWalletContract.methods
         .getOwner()
         .call({from: this.web3.eth.accounts[0]})
         .then(owner => {
         console.log(owner, 'owner');
       });
 
-      SimpleWalletContract.methods.isAddressAllowedToSend('0x4d1774B28F2Fd4f0937A0a11fe3D151018f13Cd0')
+      this.simpleWalletContract.methods.isAddressAllowedToSend('0x627306090abaB3A6e1400e9345bC60c78a8BEf57')
         .call({from: this.web3.eth.accounts[0], gasPrice: 3000000})
         .then(isAllowed => {
-          console.log(isAllowed);
+          console.log(isAllowed, );
         });
   }
 

@@ -4,19 +4,16 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-send-funds',
   templateUrl: './send-funds.component.html',
-  styleUrls: ['./send-funds.component.css']
 })
 export class SendFundsComponent implements OnInit {
 
-  public model: {from: string, to: string, amount: number};
+  public model: {amount: number};
   public addresses: string[];
 
   constructor(private readonly web3Service: Web3Service) {}
 
   ngOnInit() {
     this.model = {
-      from: '',
-      to: '',
       amount: 0,
     };
 
@@ -25,10 +22,13 @@ export class SendFundsComponent implements OnInit {
     });
   }
 
-  onSubmit() {
-    this.depositFunds();
+  async onSubmit() {
+    console.log(this.model, 'submitting data');
+    await this.depositFunds();
   }
 
-  depositFunds() {
+  async depositFunds() {
+    await this.web3Service.sendFundsToWallet(this.model.amount);
+    alert(`${this.model.amount} funds sent!`);
   }
 }
