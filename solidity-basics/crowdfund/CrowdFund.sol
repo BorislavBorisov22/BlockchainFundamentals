@@ -1,6 +1,5 @@
 pragma solidity ^0.4.10;
 
-
 contract CrowdFund {
     
     address public beneficiary;
