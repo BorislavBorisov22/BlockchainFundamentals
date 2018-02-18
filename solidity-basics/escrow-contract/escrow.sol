@@ -1,6 +1,5 @@
 pragma solidity ^0.4.10;
 
-
 contract Escrow {
     address public buyer;
     address public seller;
