@@ -7,16 +7,18 @@ contract PeopleBalances {
         uint tokensCount;
     }
     
-    uint public exchangeRate = 5;
-    uint crowdSaleTimespan = 5 minutes;
+    uint public constant exchangeRate = 5;
+    uint public constant tokenPrice = (1 ether) / exchangeRate;
+    uint public crowdSaleTimespan = 5 minutes;
+    uint public withdrawalTimespan = 1 years;
     
-    uint contractInitTime;
-    address owner;
+    uint public contractInitTime;
+    address public owner;
     
     mapping(address => TokenHolder) ownerToToken;
-    address[] tokenHolders;
+    address[] public tokenHolders;
     
-    function PeopleBalance() public {
+    function PeopleBalances() public {
         contractInitTime = now;
         owner = msg.sender;
     }
@@ -43,7 +45,7 @@ contract PeopleBalances {
                 ownerToToken[msg.sender].hasHeldTokens = true;
             }
         
-            uint tokensCount = msg.value * 5;
+            uint tokensCount = msg.value / tokenPrice;
             ownerToToken[msg.sender].tokensCount += tokensCount;
         }
     }
@@ -61,9 +63,25 @@ contract PeopleBalances {
         ownerToToken[msg.sender].tokensCount -= amount;
     }
     
+    function getTokenBalance(address adr) public view returns (uint) {
+        return ownerToToken[adr].tokensCount;
+    }
+    
+    function test() public payable returns (uint) {
+        return (msg.value * 1 ether) / 1 ether;
+    } 
+    
     function withDraw() public ownerOnly {
-        require(now - contractInitTime >= 1 years);
+        require(now - contractInitTime >= withdrawalTimespan);
         
         owner.transfer(this.balance);
+    }
+    
+    function contractBalance() public view returns (uint) {
+        return this.balance;
+    } 
+    
+    function hasBeenTokenOwner(address adr) public view returns(bool) {
+        return ownerToToken[adr].hasHeldTokens;
     }
 }
