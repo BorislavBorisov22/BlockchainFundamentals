@@ -1,59 +1,46 @@
-pragma solidity ^0.4.20;
+pragma solidity ^0.4.18;
 
-contract Pokemon {
-    string[10] public pokemons = ["Pikachu",
-        "Charizard",
-        "Mewto",
-        "Eeve",
-        "Mew",
-        "Squirtle",
-        "Bulbasaur",
-        "Vulpix",
-        "Entei",
-        "Lapras"
-    ];
+contract PokemonContract {
+    enum Pokemon {
+        Pikachu,
+        Charizard,
+        Mewto,
+        Eeve,
+        Mew,
+        Squirtle,
+        Bulbasaur,
+        Vulpix,
+        Entei,
+        Lapras
+    }
+    
+    uint public constant catchClaimInterval = 15 seconds;
     
     struct PokemonOwner {
-        address adr;
-        uint lastClaimed;
-        mapping(string => bool) ownsPokemon;
-        uint pokemonsCount;
+        uint lastCatchClaim;
+        bool[10] ownedPokemons;
     }
     
-    uint claimInterval = 15 seconds;
-    mapping(address => PokemonOwner) public pokemonOwners;
-    address[] public allOwners;
-    mapping(address => bool) public uniqueOwners;
+    address[][10] public pokemonsByOwners;
+    mapping(address => PokemonOwner) public addressToPokemonOwner;
     
-    function Pokemon() public payable {}
-    
-    modifier canClaim(address claimant) {
-        require(now - pokemonOwners[claimant].lastClaimed >= claimInterval);
-        _;
-    }
-    
-    modifier validPokemon(string name) {
-        bool isValid = false;
-        for (uint i =0; i < 10; i++) {
-            if (keccak256(name) == keccak256(pokemons[i])) {
-                isValid = true;
-                break;
-            }
+    function claimCatch(Pokemon caughtPokemon) public returns (bool success) {
+        require(now - addressToPokemonOwner[msg.sender].lastCatchClaim >= catchClaimInterval);
+        
+        addressToPokemonOwner[msg.sender].lastCatchClaim = now;
+        if (addressToPokemonOwner[msg.sender].ownedPokemons[uint(caughtPokemon)]) {
+            return false;
         }
         
-        require(isValid);
-        _;
+        addressToPokemonOwner[msg.sender].ownedPokemons[uint(caughtPokemon)] = true;
+        pokemonsByOwners[uint(caughtPokemon)].push(msg.sender);
     }
     
-    function() public payable { }
+    function getPokemonOwners(Pokemon pokemon) public view returns (address[]) {
+        return pokemonsByOwners[uint(pokemon)];
+    }
     
-    function claimPokemonCatch(string caughtPokemon) public canClaim(msg.sender) validPokemon(caughtPokemon) {
-        require(!pokemonOwners[msg.sender].ownsPokemon[caughtPokemon]);
-        pokemonOwners[msg.sender].ownsPokemon[caughtPokemon] = true;
-        pokemonOwners[msg.sender].pokemonsCount++;
-        if (!uniqueOwners[msg.sender]) {
-            uniqueOwners[msg.sender] = true;
-            allOwners.push(msg.sender);
-        }
+    function getOwnersPokemons(address adr) public view returns (bool[10]) {
+        return addressToPokemonOwner[adr].ownedPokemons;
     }
 }
