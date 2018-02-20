@@ -44,8 +44,10 @@ contract PeopleBalances {
                 tokenHolders.push(msg.sender);
                 ownerToToken[msg.sender].hasHeldTokens = true;
             }
-        
-            uint tokensCount = msg.value / tokenPrice;
+            
+            // multiplying by 1 ether so if we buy for example tokens for 1 wei we would have tokenCount 5 which would mean 0.0000000000000000000001 tokens, 
+            // and for 1 ether we would have tokenCount 1000000000000000000 which would mean 1 token 
+            uint tokensCount = (msg.value * (1 ether)) / tokenPrice;
             ownerToToken[msg.sender].tokensCount += tokensCount;
         }
     }
@@ -66,10 +68,6 @@ contract PeopleBalances {
     function getTokenBalance(address adr) public view returns (uint) {
         return ownerToToken[adr].tokensCount;
     }
-    
-    function test() public payable returns (uint) {
-        return (msg.value * 1 ether) / 1 ether;
-    } 
     
     function withDraw() public ownerOnly {
         require(now - contractInitTime >= withdrawalTimespan);
