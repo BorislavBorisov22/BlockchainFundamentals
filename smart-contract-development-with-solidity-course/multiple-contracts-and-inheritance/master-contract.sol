@@ -1,4 +1,4 @@
-pragma solidity ^0.4.19;
+pragma solidity ^0.4.17;
 
 contract Master {
     address owner;
@@ -16,7 +16,7 @@ contract Master {
     }
     
     function createAgent() public ownerOnly returns(address) {
-        Agent agent = new Agent();
+        Agent agent = new Agent(this);
         agents[agent] = agent;
         return agent;
     }
@@ -41,8 +41,8 @@ contract Agent {
     
     address owner;
     
-    function Agent() public {
-        owner = msg.sender;
+    function Agent(address _owner) public {
+        owner = _owner;
     }
     
     modifier ownerOnly {
@@ -55,6 +55,6 @@ contract Agent {
     }
     
     function isReady() ownerOnly public returns(bool) {
-        return last != 0 && now - last >= 15 seconds;
+        return now - last >= 15 seconds;
     }
 }
