@@ -1,4 +1,7 @@
 //this function will be called when the whole page is loaded
+$ = jQuery = require('jquery');
+const toastr = require('toastr');
+
 window.addEventListener('load', () => {
     if (typeof web3 === 'undefined') {
         //if there is no web3 variable
@@ -15,7 +18,7 @@ const { POKEMON_ABI, POKEMON_ADDRESS } = require('./contract-constants');
 let acc;
 
 function init(abi, address) {
-    var Contract = web3.eth.contract(abi);
+    const Contract = web3.eth.contract(abi);
     contractInstance = Contract.at(address);
     updateAccount();
 }

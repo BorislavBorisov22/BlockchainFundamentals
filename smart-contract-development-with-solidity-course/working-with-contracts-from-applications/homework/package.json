@@ -3,10 +3,18 @@
     "version": "1.0.0",
     "main": "index.js",
     "license": "MIT",
+    "scripts": {
+        "start": "gulp"
+    },
     "dependencies": {
+        "bootstrap": "3.3.5",
         "browserify": "^16.1.1",
         "gulp": "^3.9.1",
+        "gulp-concat": "^2.6.1",
         "gulp-connect": "^5.5.0",
-        "gulp-open": "^3.0.0"
+        "gulp-open": "^3.0.0",
+        "jquery": "^3.3.1",
+        "toastr": "^2.1.4",
+        "vinyl-source-stream": "1.1.0"
     }
 }
