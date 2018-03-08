@@ -4,6 +4,16 @@
     <link rel="stylesheet" href="./styles/bundle.css">
 </head>
 
+<style>
+    body {
+        background: url(https://images8.alphacoders.com/548/thumb-1920-548142.jpg);
+    }
+    
+    label {
+        color: red;
+    }
+</style>
+
 <body>
     <div class="container-fluid">
         <div class="jumbotron">
@@ -11,16 +21,17 @@
             <p class="lead">This is a simple page that interacts with a deployed smart contract with the web3.js api</p>
             <hr class="my-4">
             <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Cool</a>
+                <a class="btn btn-danger btn-lg" href="#" role="button">Cool</a>
             </p>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <label>
                         Claim pokemon catch
-                        <input type="text" class="form-control">
+                        <input placeholder="Pokemon Index" id="pokemon-index-input" type="text" class="form-control">
                     </label>
-                <button on class="btn btn-primary" id="claim-pokemon-btn">Claim</button>
+                <button on class="btn btn-danger" id="claim-pokemon-btn">Claim</button>
+                <button on class="btn btn-danger" id="see-owners-btn">See Owners</button>
             </div>
 
         </div>
@@ -28,12 +39,13 @@
             <div class="col-md-12">
                 <label>
                     See address' pokemons
-                    <input type="text" class="form-control">
+                    <input type="text" class="form-control" id="see-pokemons-input">
                </label>
-                <button on class="btn btn-primary" id="see-pokemons-btn">See</button>
+                <button data-toggle="modal" data-target="#exampleModal" class="btn btn-danger" id="see-pokemons-btn">See</button>
             </div>
         </div>
     </div>
+
     <script type="text/javascript" src="./scripts/bundle.js"></script>
 </body>
 

@@ -59,7 +59,7 @@ const POKEMON_ABI = [{
 ];
 
 // place deployed contract address here
-const POKEMON_ADDRESS = '0x0';
+const POKEMON_ADDRESS = '0xd8c3389311ae0e7b657a8186d2dade4036091cc8';
 
 module.exports = {
     POKEMON_ABI,

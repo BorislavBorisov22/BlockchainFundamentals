@@ -71,18 +71,18 @@
       "type": "function"
     }
   ],
-  "bytecode": "0x6060604052341561000f57600080fd5b61076e8061001e6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631bf132521461005c5780638675640b146100ea578063fd3c783a14610165575b600080fd5b341561006757600080fd5b610093600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061018b565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100d65780820151818401526020810190506100bb565b505050509050019250505060405180910390f35b34156100f557600080fd5b61010e600480803560ff16906020019091905050610258565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b83811015610151578082015181840152602081019050610136565b505050509050019250505060405180910390f35b341561017057600080fd5b610189600480803560ff1690602001909190505061030a565b005b61019361068f565b6000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000180548060200260200160405190810160405280929190818152602001828054801561024c57602002820191906000526020600020906000905b82829054906101000a900460ff16601f81111561022657fe5b8152602001906001019060208260000104928301926001038202915080841161020d5790505b50505050509050919050565b6102606106a3565b6001600083601f81111561027057fe5b81526020019081526020016000208054806020026020016040519081016040528092919081815260200182805480156102fe57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116102b4575b50505050509050919050565b3381600f6000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154014211151561035e57600080fd5b61036882826105d4565b15151561037457600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000180548060010182816103c791906106b7565b916000526020600020906020918282040191900685909190916101000a81548160ff0219169083601f8111156103f957fe5b021790555050426000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101819055506001600084601f81111561045557fe5b8152602001908152602001600020805480600101828161047591906106f1565b9160005260206000209001600033909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506001600260003386604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166c0100000000000000000000000002815260140182601f81111561051d57fe5b60ff167f01000000000000000000000000000000000000000000000000000000000000000281526001019250505060405180910390206000191660001916815260200190815260200160002060006101000a81548160ff02191690831515021790555082601f81111561058c57fe5b3373ffffffffffffffffffffffffffffffffffffffff167f38f3d86cab42835e18b9ff5ed00cd76b722b92c435ad0d9aa170939ac7d499f560405160405180910390a3505050565b6000600260008484604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166c0100000000000000000000000002815260140182601f81111561062d57fe5b60ff167f01000000000000000000000000000000000000000000000000000000000000000281526001019250505060405180910390206000191660001916815260200190815260200160002060009054906101000a900460ff16905092915050565b602060405190810160405280600081525090565b602060405190810160405280600081525090565b8154818355818115116106ec57601f016020900481601f016020900483600052602060002091820191016106eb919061071d565b5b505050565b81548183558181151161071857818360005260206000209182019101610717919061071d565b5b505050565b61073f91905b8082111561073b576000816000905550600101610723565b5090565b905600a165627a7a72305820656e196cf46adda3261b32f0d7e119ef302b64004e56f3a92ecd362ea0be7d4a0029",
-  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631bf132521461005c5780638675640b146100ea578063fd3c783a14610165575b600080fd5b341561006757600080fd5b610093600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061018b565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100d65780820151818401526020810190506100bb565b505050509050019250505060405180910390f35b34156100f557600080fd5b61010e600480803560ff16906020019091905050610258565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b83811015610151578082015181840152602081019050610136565b505050509050019250505060405180910390f35b341561017057600080fd5b610189600480803560ff1690602001909190505061030a565b005b61019361068f565b6000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000180548060200260200160405190810160405280929190818152602001828054801561024c57602002820191906000526020600020906000905b82829054906101000a900460ff16601f81111561022657fe5b8152602001906001019060208260000104928301926001038202915080841161020d5790505b50505050509050919050565b6102606106a3565b6001600083601f81111561027057fe5b81526020019081526020016000208054806020026020016040519081016040528092919081815260200182805480156102fe57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116102b4575b50505050509050919050565b3381600f6000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154014211151561035e57600080fd5b61036882826105d4565b15151561037457600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000180548060010182816103c791906106b7565b916000526020600020906020918282040191900685909190916101000a81548160ff0219169083601f8111156103f957fe5b021790555050426000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101819055506001600084601f81111561045557fe5b8152602001908152602001600020805480600101828161047591906106f1565b9160005260206000209001600033909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506001600260003386604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166c0100000000000000000000000002815260140182601f81111561051d57fe5b60ff167f01000000000000000000000000000000000000000000000000000000000000000281526001019250505060405180910390206000191660001916815260200190815260200160002060006101000a81548160ff02191690831515021790555082601f81111561058c57fe5b3373ffffffffffffffffffffffffffffffffffffffff167f38f3d86cab42835e18b9ff5ed00cd76b722b92c435ad0d9aa170939ac7d499f560405160405180910390a3505050565b6000600260008484604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166c0100000000000000000000000002815260140182601f81111561062d57fe5b60ff167f01000000000000000000000000000000000000000000000000000000000000000281526001019250505060405180910390206000191660001916815260200190815260200160002060009054906101000a900460ff16905092915050565b602060405190810160405280600081525090565b602060405190810160405280600081525090565b8154818355818115116106ec57601f016020900481601f016020900483600052602060002091820191016106eb919061071d565b5b505050565b81548183558181151161071857818360005260206000209182019101610717919061071d565b5b505050565b61073f91905b8082111561073b576000816000905550600101610723565b5090565b905600a165627a7a72305820656e196cf46adda3261b32f0d7e119ef302b64004e56f3a92ecd362ea0be7d4a0029",
-  "sourceMap": "28:2420:1:-;;;;;;;;;;;;;;;;;",
-  "deployedSourceMap": "28:2420:1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2175:127;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;2314:131:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;1776:387:1;;;;;;;;;;;;;;;;;;;;;;;;;;;;2175:127;2241:9;;:::i;:::-;2270:7;:15;2278:6;2270:15;;;;;;;;;;;;;;;:24;;2263:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2175:127;;;:::o;2314:131::-;2379:9;;:::i;:::-;2408:14;:29;2428:7;2423:13;;;;;;;;2408:29;;;;;;;;;;;2401:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2314:131;;;:::o;1776:387::-;1837:10;1849:7;792:10;764:7;:15;772:6;764:15;;;;;;;;;;;;;;;:25;;;:38;758:3;:44;750:53;;;;;;;;823:27;834:6;842:7;823:10;:27::i;:::-;822:28;814:37;;;;;;;;1869:7;:19;1877:10;1869:19;;;;;;;;;;;;;;;:28;;:42;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;1903:7;1869:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1954:3;1922:7;:19;1930:10;1922:19;;;;;;;;;;;;;;;:29;;:35;;;;1978:14;:29;1998:7;1993:13;;;;;;;;1978:29;;;;;;;;;;;:46;;;;;;;;;;;:::i;:::-;;;;;;;;;;2013:10;1978:46;;;;;;;;;;;;;;;;;;;;;;;2093:4;2045:13;:45;2069:10;2081:7;2059:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2045:45;;;;;;;;;;;;;;;;;;:52;;;;;;;;;;;;;;;;;;2147:7;2118:37;;;;;;;;2135:10;2118:37;;;;;;;;;;;;1776:387;;;:::o;1615:149::-;1691:4;1715:13;:41;1739:6;1747:7;1729:26;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1715:41;;;;;;;;;;;;;;;;;;;;;;;;;;;1708:48;;1615:149;;;;:::o;28:2420::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "bytecode": "0x6060604052341561000f57600080fd5b61076e8061001e6000396000f300606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631bf132521461005c5780638675640b146100ea578063fd3c783a14610165575b600080fd5b341561006757600080fd5b610093600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061018b565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100d65780820151818401526020810190506100bb565b505050509050019250505060405180910390f35b34156100f557600080fd5b61010e600480803560ff16906020019091905050610258565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b83811015610151578082015181840152602081019050610136565b505050509050019250505060405180910390f35b341561017057600080fd5b610189600480803560ff1690602001909190505061030a565b005b61019361068f565b6000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000180548060200260200160405190810160405280929190818152602001828054801561024c57602002820191906000526020600020906000905b82829054906101000a900460ff16601f81111561022657fe5b8152602001906001019060208260000104928301926001038202915080841161020d5790505b50505050509050919050565b6102606106a3565b6001600083601f81111561027057fe5b81526020019081526020016000208054806020026020016040519081016040528092919081815260200182805480156102fe57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116102b4575b50505050509050919050565b3381600f6000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154014211151561035e57600080fd5b61036882826105d4565b15151561037457600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000180548060010182816103c791906106b7565b916000526020600020906020918282040191900685909190916101000a81548160ff0219169083601f8111156103f957fe5b021790555050426000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101819055506001600084601f81111561045557fe5b8152602001908152602001600020805480600101828161047591906106f1565b9160005260206000209001600033909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506001600260003386604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166c0100000000000000000000000002815260140182601f81111561051d57fe5b60ff167f01000000000000000000000000000000000000000000000000000000000000000281526001019250505060405180910390206000191660001916815260200190815260200160002060006101000a81548160ff02191690831515021790555082601f81111561058c57fe5b3373ffffffffffffffffffffffffffffffffffffffff167f38f3d86cab42835e18b9ff5ed00cd76b722b92c435ad0d9aa170939ac7d499f560405160405180910390a3505050565b6000600260008484604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166c0100000000000000000000000002815260140182601f81111561062d57fe5b60ff167f01000000000000000000000000000000000000000000000000000000000000000281526001019250505060405180910390206000191660001916815260200190815260200160002060009054906101000a900460ff16905092915050565b602060405190810160405280600081525090565b602060405190810160405280600081525090565b8154818355818115116106ec57601f016020900481601f016020900483600052602060002091820191016106eb919061071d565b5b505050565b81548183558181151161071857818360005260206000209182019101610717919061071d565b5b505050565b61073f91905b8082111561073b576000816000905550600101610723565b5090565b905600a165627a7a72305820c075bfc086549a90ee4e1eb7a569d5ebd7eea46aa35af0b0bb86e08f0a520e1c0029",
+  "deployedBytecode": "0x606060405260043610610057576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680631bf132521461005c5780638675640b146100ea578063fd3c783a14610165575b600080fd5b341561006757600080fd5b610093600480803573ffffffffffffffffffffffffffffffffffffffff1690602001909190505061018b565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b838110156100d65780820151818401526020810190506100bb565b505050509050019250505060405180910390f35b34156100f557600080fd5b61010e600480803560ff16906020019091905050610258565b6040518080602001828103825283818151815260200191508051906020019060200280838360005b83811015610151578082015181840152602081019050610136565b505050509050019250505060405180910390f35b341561017057600080fd5b610189600480803560ff1690602001909190505061030a565b005b61019361068f565b6000808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000180548060200260200160405190810160405280929190818152602001828054801561024c57602002820191906000526020600020906000905b82829054906101000a900460ff16601f81111561022657fe5b8152602001906001019060208260000104928301926001038202915080841161020d5790505b50505050509050919050565b6102606106a3565b6001600083601f81111561027057fe5b81526020019081526020016000208054806020026020016040519081016040528092919081815260200182805480156102fe57602002820191906000526020600020905b8160009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190600101908083116102b4575b50505050509050919050565b3381600f6000808473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060010154014211151561035e57600080fd5b61036882826105d4565b15151561037457600080fd5b6000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200190815260200160002060000180548060010182816103c791906106b7565b916000526020600020906020918282040191900685909190916101000a81548160ff0219169083601f8111156103f957fe5b021790555050426000803373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff168152602001908152602001600020600101819055506001600084601f81111561045557fe5b8152602001908152602001600020805480600101828161047591906106f1565b9160005260206000209001600033909190916101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908373ffffffffffffffffffffffffffffffffffffffff160217905550506001600260003386604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166c0100000000000000000000000002815260140182601f81111561051d57fe5b60ff167f01000000000000000000000000000000000000000000000000000000000000000281526001019250505060405180910390206000191660001916815260200190815260200160002060006101000a81548160ff02191690831515021790555082601f81111561058c57fe5b3373ffffffffffffffffffffffffffffffffffffffff167f38f3d86cab42835e18b9ff5ed00cd76b722b92c435ad0d9aa170939ac7d499f560405160405180910390a3505050565b6000600260008484604051808373ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166c0100000000000000000000000002815260140182601f81111561062d57fe5b60ff167f01000000000000000000000000000000000000000000000000000000000000000281526001019250505060405180910390206000191660001916815260200190815260200160002060009054906101000a900460ff16905092915050565b602060405190810160405280600081525090565b602060405190810160405280600081525090565b8154818355818115116106ec57601f016020900481601f016020900483600052602060002091820191016106eb919061071d565b5b505050565b81548183558181151161071857818360005260206000209182019101610717919061071d565b5b505050565b61073f91905b8082111561073b576000816000905550600101610723565b5090565b905600a165627a7a72305820c075bfc086549a90ee4e1eb7a569d5ebd7eea46aa35af0b0bb86e08f0a520e1c0029",
+  "sourceMap": "28:2420:0:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "28:2420:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2175:127;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;2314:131:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:2;8:100;;;99:1;94:3;90;84:5;80:1;75:3;71;64:6;52:2;49:1;45:3;40:15;;8:100;;;12:14;3:109;;;;;;;;;;;;;;;;;1776:387:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;2175:127;2241:9;;:::i;:::-;2270:7;:15;2278:6;2270:15;;;;;;;;;;;;;;;:24;;2263:31;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2175:127;;;:::o;2314:131::-;2379:9;;:::i;:::-;2408:14;:29;2428:7;2423:13;;;;;;;;2408:29;;;;;;;;;;;2401:36;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2314:131;;;:::o;1776:387::-;1837:10;1849:7;792:10;764:7;:15;772:6;764:15;;;;;;;;;;;;;;;:25;;;:38;758:3;:44;750:53;;;;;;;;823:27;834:6;842:7;823:10;:27::i;:::-;822:28;814:37;;;;;;;;1869:7;:19;1877:10;1869:19;;;;;;;;;;;;;;;:28;;:42;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;;1903:7;1869:42;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1954:3;1922:7;:19;1930:10;1922:19;;;;;;;;;;;;;;;:29;;:35;;;;1978:14;:29;1998:7;1993:13;;;;;;;;1978:29;;;;;;;;;;;:46;;;;;;;;;;;:::i;:::-;;;;;;;;;;2013:10;1978:46;;;;;;;;;;;;;;;;;;;;;;;2093:4;2045:13;:45;2069:10;2081:7;2059:30;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2045:45;;;;;;;;;;;;;;;;;;:52;;;;;;;;;;;;;;;;;;2147:7;2118:37;;;;;;;;2135:10;2118:37;;;;;;;;;;;;1776:387;;;:::o;1615:149::-;1691:4;1715:13;:41;1739:6;1747:7;1729:26;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;1715:41;;;;;;;;;;;;;;;;;;;;;;;;;;;1708:48;;1615:149;;;;:::o;28:2420::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o",
   "source": "pragma solidity ^0.4.17;\r\n\r\ncontract Pokemons {\r\n    //a few defined pokemons\r\n    enum Pokemon { Bulbasaur, Ivysaur, Venusaur, Charmander, Charmeleon, Charizard, Squirtle, Wartortle,\r\n    Blastoise, Caterpie, Metapod, Butterfree, Weedle, Kakuna, Beedrill, Pidgey, Pidgeotto, Pidgeot, Rattata, Raticate,\r\n    Spearow, Fearow, Ekans, Arbok, Pikachu, Raichu, Sandshrew, Sandslash, NidoranF, Nidorina, Nidoqueen, NidoranM }\r\n    \r\n    //pokemon catch event. Note the \"Log\" prefix, which is a standart for event names.\r\n    event LogPokemonCaught(address indexed by, Pokemon indexed pokemon);\r\n    \r\n    //a pokemon can be caught at most once every 15 seconds if not caught already\r\n    modifier canPersonCatch(address person, Pokemon pokemon){\r\n        require(now > players[person].lastCatch + 15 seconds);\r\n        require(!hasPokemon(person, pokemon));\r\n        _;\r\n    }\r\n    \r\n    struct Player {\r\n        Pokemon[] pokemons;\r\n        uint lastCatch; //timestamp\r\n    }\r\n    \r\n    mapping(address => Player) players;\r\n    \r\n    //mapping can't take user-defined types as keys (ex. Pokemon)\r\n    //the key is uint256, because the amount of Pokemons may increase in the future\r\n    //and pass the uint8 range\r\n    mapping(uint => address[]) pokemonHolders;\r\n    \r\n    //the hash of the pokemon holder and the pokemon is the key. This allows constant time lookup of whether a pokemon is caught by a person\r\n    mapping(bytes32 => bool) hasPokemonMap;\r\n    \r\n    //returns if that person has caught a pokemon. It uses the hash of the address and the pokemon so that it can return the answer\r\n    //without loops\r\n    function hasPokemon(address person, Pokemon pokemon) internal view returns (bool) {\r\n        return hasPokemonMap[keccak256(person, pokemon)];\r\n    }\r\n    \r\n    function catchPokemon(Pokemon pokemon) public canPersonCatch(msg.sender, pokemon) {\r\n        players[msg.sender].pokemons.push(pokemon);\r\n        players[msg.sender].lastCatch = now;\r\n        \r\n        pokemonHolders[uint(pokemon)].push(msg.sender);\r\n        \r\n        hasPokemonMap[keccak256(msg.sender, pokemon)] = true;\r\n        \r\n        LogPokemonCaught(msg.sender, pokemon);\r\n    }\r\n    \r\n    function getPokemonsByPerson(address person) public view returns (Pokemon[]) {\r\n        return players[person].pokemons;\r\n    }\r\n    \r\n    function getPokemonHolders(Pokemon pokemon) public view returns (address[]) {\r\n        return pokemonHolders[uint(pokemon)];\r\n    }\r\n}",
-  "sourcePath": "C:\\Users\\User\\Desktop\\Repositories\\BlockchainFundamentals\\smart-contract-development-with-solidity-course\\working-with-contracts-from-applications\\homework\\contracts\\Pokemon.sol",
+  "sourcePath": "C:\\Users\\User\\Desktop\\Repositories\\BlockchainFundamentals\\smart-contract-development-with-solidity-course\\working-with-contracts-from-applications\\homework\\contracts\\Pokemons.sol",
   "ast": {
     "attributes": {
-      "absolutePath": "/C/Users/User/Desktop/Repositories/BlockchainFundamentals/smart-contract-development-with-solidity-course/working-with-contracts-from-applications/homework/contracts/Pokemon.sol",
+      "absolutePath": "/C/Users/User/Desktop/Repositories/BlockchainFundamentals/smart-contract-development-with-solidity-course/working-with-contracts-from-applications/homework/contracts/Pokemons.sol",
       "exportedSymbols": {
         "Pokemons": [
-          244
+          187
         ]
       }
     },
@@ -96,9 +96,9 @@
             ".17"
           ]
         },
-        "id": 58,
+        "id": 1,
         "name": "PragmaDirective",
-        "src": "0:24:1"
+        "src": "0:24:0"
       },
       {
         "attributes": {
@@ -112,10 +112,10 @@
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            244
+            187
           ],
           "name": "Pokemons",
-          "scope": 245
+          "scope": 188
         },
         "children": [
           {
@@ -128,262 +128,262 @@
                 "attributes": {
                   "name": "Bulbasaur"
                 },
-                "id": 59,
+                "id": 2,
                 "name": "EnumValue",
-                "src": "98:9:1"
+                "src": "98:9:0"
               },
               {
                 "attributes": {
                   "name": "Ivysaur"
                 },
-                "id": 60,
+                "id": 3,
                 "name": "EnumValue",
-                "src": "109:7:1"
+                "src": "109:7:0"
               },
               {
                 "attributes": {
                   "name": "Venusaur"
                 },
-                "id": 61,
+                "id": 4,
                 "name": "EnumValue",
-                "src": "118:8:1"
+                "src": "118:8:0"
               },
               {
                 "attributes": {
                   "name": "Charmander"
                 },
-                "id": 62,
+                "id": 5,
                 "name": "EnumValue",
-                "src": "128:10:1"
+                "src": "128:10:0"
               },
               {
                 "attributes": {
                   "name": "Charmeleon"
                 },
-                "id": 63,
+                "id": 6,
                 "name": "EnumValue",
-                "src": "140:10:1"
+                "src": "140:10:0"
               },
               {
                 "attributes": {
                   "name": "Charizard"
                 },
-                "id": 64,
+                "id": 7,
                 "name": "EnumValue",
-                "src": "152:9:1"
+                "src": "152:9:0"
               },
               {
                 "attributes": {
                   "name": "Squirtle"
                 },
-                "id": 65,
+                "id": 8,
                 "name": "EnumValue",
-                "src": "163:8:1"
+                "src": "163:8:0"
               },
               {
                 "attributes": {
                   "name": "Wartortle"
                 },
-                "id": 66,
+                "id": 9,
                 "name": "EnumValue",
-                "src": "173:9:1"
+                "src": "173:9:0"
               },
               {
                 "attributes": {
                   "name": "Blastoise"
                 },
-                "id": 67,
+                "id": 10,
                 "name": "EnumValue",
-                "src": "189:9:1"
+                "src": "189:9:0"
               },
               {
                 "attributes": {
                   "name": "Caterpie"
                 },
-                "id": 68,
+                "id": 11,
                 "name": "EnumValue",
-                "src": "200:8:1"
+                "src": "200:8:0"
               },
               {
                 "attributes": {
                   "name": "Metapod"
                 },
-                "id": 69,
+                "id": 12,
                 "name": "EnumValue",
-                "src": "210:7:1"
+                "src": "210:7:0"
               },
               {
                 "attributes": {
                   "name": "Butterfree"
                 },
-                "id": 70,
+                "id": 13,
                 "name": "EnumValue",
-                "src": "219:10:1"
+                "src": "219:10:0"
               },
               {
                 "attributes": {
                   "name": "Weedle"
                 },
-                "id": 71,
+                "id": 14,
                 "name": "EnumValue",
-                "src": "231:6:1"
+                "src": "231:6:0"
               },
               {
                 "attributes": {
                   "name": "Kakuna"
                 },
-                "id": 72,
+                "id": 15,
                 "name": "EnumValue",
-                "src": "239:6:1"
+                "src": "239:6:0"
               },
               {
                 "attributes": {
                   "name": "Beedrill"
                 },
-                "id": 73,
+                "id": 16,
                 "name": "EnumValue",
-                "src": "247:8:1"
+                "src": "247:8:0"
               },
               {
                 "attributes": {
                   "name": "Pidgey"
                 },
-                "id": 74,
+                "id": 17,
                 "name": "EnumValue",
-                "src": "257:6:1"
+                "src": "257:6:0"
               },
               {
                 "attributes": {
                   "name": "Pidgeotto"
                 },
-                "id": 75,
+                "id": 18,
                 "name": "EnumValue",
-                "src": "265:9:1"
+                "src": "265:9:0"
               },
               {
                 "attributes": {
                   "name": "Pidgeot"
                 },
-                "id": 76,
+                "id": 19,
                 "name": "EnumValue",
-                "src": "276:7:1"
+                "src": "276:7:0"
               },
               {
                 "attributes": {
                   "name": "Rattata"
                 },
-                "id": 77,
+                "id": 20,
                 "name": "EnumValue",
-                "src": "285:7:1"
+                "src": "285:7:0"
               },
               {
                 "attributes": {
                   "name": "Raticate"
                 },
-                "id": 78,
+                "id": 21,
                 "name": "EnumValue",
-                "src": "294:8:1"
+                "src": "294:8:0"
               },
               {
                 "attributes": {
                   "name": "Spearow"
                 },
-                "id": 79,
+                "id": 22,
                 "name": "EnumValue",
-                "src": "309:7:1"
+                "src": "309:7:0"
               },
               {
                 "attributes": {
                   "name": "Fearow"
                 },
-                "id": 80,
+                "id": 23,
                 "name": "EnumValue",
-                "src": "318:6:1"
+                "src": "318:6:0"
               },
               {
                 "attributes": {
                   "name": "Ekans"
                 },
-                "id": 81,
+                "id": 24,
                 "name": "EnumValue",
-                "src": "326:5:1"
+                "src": "326:5:0"
               },
               {
                 "attributes": {
                   "name": "Arbok"
                 },
-                "id": 82,
+                "id": 25,
                 "name": "EnumValue",
-                "src": "333:5:1"
+                "src": "333:5:0"
               },
               {
                 "attributes": {
                   "name": "Pikachu"
                 },
-                "id": 83,
+                "id": 26,
                 "name": "EnumValue",
-                "src": "340:7:1"
+                "src": "340:7:0"
               },
               {
                 "attributes": {
                   "name": "Raichu"
                 },
-                "id": 84,
+                "id": 27,
                 "name": "EnumValue",
-                "src": "349:6:1"
+                "src": "349:6:0"
               },
               {
                 "attributes": {
                   "name": "Sandshrew"
                 },
-                "id": 85,
+                "id": 28,
                 "name": "EnumValue",
-                "src": "357:9:1"
+                "src": "357:9:0"
               },
               {
                 "attributes": {
                   "name": "Sandslash"
                 },
-                "id": 86,
+                "id": 29,
                 "name": "EnumValue",
-                "src": "368:9:1"
+                "src": "368:9:0"
               },
               {
                 "attributes": {
                   "name": "NidoranF"
                 },
-                "id": 87,
+                "id": 30,
                 "name": "EnumValue",
-                "src": "379:8:1"
+                "src": "379:8:0"
               },
               {
                 "attributes": {
                   "name": "Nidorina"
                 },
-                "id": 88,
+                "id": 31,
                 "name": "EnumValue",
-                "src": "389:8:1"
+                "src": "389:8:0"
               },
               {
                 "attributes": {
                   "name": "Nidoqueen"
                 },
-                "id": 89,
+                "id": 32,
                 "name": "EnumValue",
-                "src": "399:9:1"
+                "src": "399:9:0"
               },
               {
                 "attributes": {
                   "name": "NidoranM"
                 },
-                "id": 90,
+                "id": 33,
                 "name": "EnumValue",
-                "src": "410:8:1"
+                "src": "410:8:0"
               }
             ],
-            "id": 91,
+            "id": 34,
             "name": "EnumDefinition",
-            "src": "83:337:1"
+            "src": "83:337:0"
           },
           {
             "attributes": {
@@ -398,7 +398,7 @@
                       "constant": false,
                       "indexed": true,
                       "name": "by",
-                      "scope": 97,
+                      "scope": 40,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -411,21 +411,21 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 92,
+                        "id": 35,
                         "name": "ElementaryTypeName",
-                        "src": "543:7:1"
+                        "src": "543:7:0"
                       }
                     ],
-                    "id": 93,
+                    "id": 36,
                     "name": "VariableDeclaration",
-                    "src": "543:18:1"
+                    "src": "543:18:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "indexed": true,
                       "name": "pokemon",
-                      "scope": 97,
+                      "scope": 40,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "enum Pokemons.Pokemon",
@@ -437,27 +437,27 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "Pokemon",
-                          "referencedDeclaration": 91,
+                          "referencedDeclaration": 34,
                           "type": "enum Pokemons.Pokemon"
                         },
-                        "id": 94,
+                        "id": 37,
                         "name": "UserDefinedTypeName",
-                        "src": "563:7:1"
+                        "src": "563:7:0"
                       }
                     ],
-                    "id": 95,
+                    "id": 38,
                     "name": "VariableDeclaration",
-                    "src": "563:23:1"
+                    "src": "563:23:0"
                   }
                 ],
-                "id": 96,
+                "id": 39,
                 "name": "ParameterList",
-                "src": "542:45:1"
+                "src": "542:45:0"
               }
             ],
-            "id": 97,
+            "id": 40,
             "name": "EventDefinition",
-            "src": "520:68:1"
+            "src": "520:68:0"
           },
           {
             "attributes": {
@@ -471,7 +471,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "person",
-                      "scope": 124,
+                      "scope": 67,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -484,20 +484,20 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 98,
+                        "id": 41,
                         "name": "ElementaryTypeName",
-                        "src": "707:7:1"
+                        "src": "707:7:0"
                       }
                     ],
-                    "id": 99,
+                    "id": 42,
                     "name": "VariableDeclaration",
-                    "src": "707:14:1"
+                    "src": "707:14:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "pokemon",
-                      "scope": 124,
+                      "scope": 67,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "enum Pokemons.Pokemon",
@@ -509,22 +509,22 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "Pokemon",
-                          "referencedDeclaration": 91,
+                          "referencedDeclaration": 34,
                           "type": "enum Pokemons.Pokemon"
                         },
-                        "id": 100,
+                        "id": 43,
                         "name": "UserDefinedTypeName",
-                        "src": "723:7:1"
+                        "src": "723:7:0"
                       }
                     ],
-                    "id": 101,
+                    "id": 44,
                     "name": "VariableDeclaration",
-                    "src": "723:15:1"
+                    "src": "723:15:0"
                   }
                 ],
-                "id": 102,
+                "id": 45,
                 "name": "ParameterList",
-                "src": "706:33:1"
+                "src": "706:33:0"
               },
               {
                 "children": [
@@ -556,13 +556,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 259,
+                              "referencedDeclaration": 202,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
-                            "id": 103,
+                            "id": 46,
                             "name": "Identifier",
-                            "src": "750:7:1"
+                            "src": "750:7:0"
                           },
                           {
                             "attributes": {
@@ -585,13 +585,13 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 258,
+                                  "referencedDeclaration": 201,
                                   "type": "uint256",
                                   "value": "now"
                                 },
-                                "id": 104,
+                                "id": 47,
                                 "name": "Identifier",
-                                "src": "758:3:1"
+                                "src": "758:3:0"
                               },
                               {
                                 "attributes": {
@@ -616,7 +616,7 @@
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "member_name": "lastCatch",
-                                      "referencedDeclaration": 129,
+                                      "referencedDeclaration": 72,
                                       "type": "uint256"
                                     },
                                     "children": [
@@ -636,13 +636,13 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 134,
+                                              "referencedDeclaration": 77,
                                               "type": "mapping(address => struct Pokemons.Player storage ref)",
                                               "value": "players"
                                             },
-                                            "id": 105,
+                                            "id": 48,
                                             "name": "Identifier",
-                                            "src": "764:7:1"
+                                            "src": "764:7:0"
                                           },
                                           {
                                             "attributes": {
@@ -650,23 +650,23 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 99,
+                                              "referencedDeclaration": 42,
                                               "type": "address",
                                               "value": "person"
                                             },
-                                            "id": 106,
+                                            "id": 49,
                                             "name": "Identifier",
-                                            "src": "772:6:1"
+                                            "src": "772:6:0"
                                           }
                                         ],
-                                        "id": 107,
+                                        "id": 50,
                                         "name": "IndexAccess",
-                                        "src": "764:15:1"
+                                        "src": "764:15:0"
                                       }
                                     ],
-                                    "id": 108,
+                                    "id": 51,
                                     "name": "MemberAccess",
-                                    "src": "764:25:1"
+                                    "src": "764:25:0"
                                   },
                                   {
                                     "attributes": {
@@ -681,29 +681,29 @@
                                       "type": "int_const 15",
                                       "value": "15"
                                     },
-                                    "id": 109,
+                                    "id": 52,
                                     "name": "Literal",
-                                    "src": "792:10:1"
+                                    "src": "792:10:0"
                                   }
                                 ],
-                                "id": 110,
+                                "id": 53,
                                 "name": "BinaryOperation",
-                                "src": "764:38:1"
+                                "src": "764:38:0"
                               }
                             ],
-                            "id": 111,
+                            "id": 54,
                             "name": "BinaryOperation",
-                            "src": "758:44:1"
+                            "src": "758:44:0"
                           }
                         ],
-                        "id": 112,
+                        "id": 55,
                         "name": "FunctionCall",
-                        "src": "750:53:1"
+                        "src": "750:53:0"
                       }
                     ],
-                    "id": 113,
+                    "id": 56,
                     "name": "ExpressionStatement",
-                    "src": "750:53:1"
+                    "src": "750:53:0"
                   },
                   {
                     "children": [
@@ -733,13 +733,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 259,
+                              "referencedDeclaration": 202,
                               "type": "function (bool) pure",
                               "value": "require"
                             },
-                            "id": 114,
+                            "id": 57,
                             "name": "Identifier",
-                            "src": "814:7:1"
+                            "src": "814:7:0"
                           },
                           {
                             "attributes": {
@@ -776,20 +776,20 @@
                                           "typeString": "address"
                                         },
                                         {
-                                          "typeIdentifier": "t_enum$_Pokemon_$91",
+                                          "typeIdentifier": "t_enum$_Pokemon_$34",
                                           "typeString": "enum Pokemons.Pokemon"
                                         }
                                       ],
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 160,
+                                      "referencedDeclaration": 103,
                                       "type": "function (address,enum Pokemons.Pokemon) view returns (bool)",
                                       "value": "hasPokemon"
                                     },
-                                    "id": 115,
+                                    "id": 58,
                                     "name": "Identifier",
-                                    "src": "823:10:1"
+                                    "src": "823:10:0"
                                   },
                                   {
                                     "attributes": {
@@ -797,13 +797,13 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 99,
+                                      "referencedDeclaration": 42,
                                       "type": "address",
                                       "value": "person"
                                     },
-                                    "id": 116,
+                                    "id": 59,
                                     "name": "Identifier",
-                                    "src": "834:6:1"
+                                    "src": "834:6:0"
                                   },
                                   {
                                     "attributes": {
@@ -811,54 +811,54 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 101,
+                                      "referencedDeclaration": 44,
                                       "type": "enum Pokemons.Pokemon",
                                       "value": "pokemon"
                                     },
-                                    "id": 117,
+                                    "id": 60,
                                     "name": "Identifier",
-                                    "src": "842:7:1"
+                                    "src": "842:7:0"
                                   }
                                 ],
-                                "id": 118,
+                                "id": 61,
                                 "name": "FunctionCall",
-                                "src": "823:27:1"
+                                "src": "823:27:0"
                               }
                             ],
-                            "id": 119,
+                            "id": 62,
                             "name": "UnaryOperation",
-                            "src": "822:28:1"
+                            "src": "822:28:0"
                           }
                         ],
-                        "id": 120,
+                        "id": 63,
                         "name": "FunctionCall",
-                        "src": "814:37:1"
+                        "src": "814:37:0"
                       }
                     ],
-                    "id": 121,
+                    "id": 64,
                     "name": "ExpressionStatement",
-                    "src": "814:37:1"
+                    "src": "814:37:0"
                   },
                   {
-                    "id": 122,
+                    "id": 65,
                     "name": "PlaceholderStatement",
-                    "src": "862:1:1"
+                    "src": "862:1:0"
                   }
                 ],
-                "id": 123,
+                "id": 66,
                 "name": "Block",
-                "src": "739:132:1"
+                "src": "739:132:0"
               }
             ],
-            "id": 124,
+            "id": 67,
             "name": "ModifierDefinition",
-            "src": "683:188:1"
+            "src": "683:188:0"
           },
           {
             "attributes": {
               "canonicalName": "Pokemons.Player",
               "name": "Player",
-              "scope": 244,
+              "scope": 187,
               "visibility": "public"
             },
             "children": [
@@ -866,7 +866,7 @@
                 "attributes": {
                   "constant": false,
                   "name": "pokemons",
-                  "scope": 130,
+                  "scope": 73,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "enum Pokemons.Pokemon[] storage pointer",
@@ -884,28 +884,28 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "Pokemon",
-                          "referencedDeclaration": 91,
+                          "referencedDeclaration": 34,
                           "type": "enum Pokemons.Pokemon"
                         },
-                        "id": 125,
+                        "id": 68,
                         "name": "UserDefinedTypeName",
-                        "src": "908:7:1"
+                        "src": "908:7:0"
                       }
                     ],
-                    "id": 126,
+                    "id": 69,
                     "name": "ArrayTypeName",
-                    "src": "908:9:1"
+                    "src": "908:9:0"
                   }
                 ],
-                "id": 127,
+                "id": 70,
                 "name": "VariableDeclaration",
-                "src": "908:18:1"
+                "src": "908:18:0"
               },
               {
                 "attributes": {
                   "constant": false,
                   "name": "lastCatch",
-                  "scope": 130,
+                  "scope": 73,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -918,25 +918,25 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 128,
+                    "id": 71,
                     "name": "ElementaryTypeName",
-                    "src": "937:4:1"
+                    "src": "937:4:0"
                   }
                 ],
-                "id": 129,
+                "id": 72,
                 "name": "VariableDeclaration",
-                "src": "937:14:1"
+                "src": "937:14:0"
               }
             ],
-            "id": 130,
+            "id": 73,
             "name": "StructDefinition",
-            "src": "883:88:1"
+            "src": "883:88:0"
           },
           {
             "attributes": {
               "constant": false,
               "name": "players",
-              "scope": 244,
+              "scope": 187,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => struct Pokemons.Player storage ref)",
@@ -954,36 +954,36 @@
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 131,
+                    "id": 74,
                     "name": "ElementaryTypeName",
-                    "src": "991:7:1"
+                    "src": "991:7:0"
                   },
                   {
                     "attributes": {
                       "contractScope": null,
                       "name": "Player",
-                      "referencedDeclaration": 130,
+                      "referencedDeclaration": 73,
                       "type": "struct Pokemons.Player storage pointer"
                     },
-                    "id": 132,
+                    "id": 75,
                     "name": "UserDefinedTypeName",
-                    "src": "1002:6:1"
+                    "src": "1002:6:0"
                   }
                 ],
-                "id": 133,
+                "id": 76,
                 "name": "Mapping",
-                "src": "983:26:1"
+                "src": "983:26:0"
               }
             ],
-            "id": 134,
+            "id": 77,
             "name": "VariableDeclaration",
-            "src": "983:34:1"
+            "src": "983:34:0"
           },
           {
             "attributes": {
               "constant": false,
               "name": "pokemonHolders",
-              "scope": 244,
+              "scope": 187,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(uint256 => address[] storage ref)",
@@ -1001,9 +1001,9 @@
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 135,
+                    "id": 78,
                     "name": "ElementaryTypeName",
-                    "src": "1222:4:1"
+                    "src": "1222:4:0"
                   },
                   {
                     "attributes": {
@@ -1016,30 +1016,30 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 136,
+                        "id": 79,
                         "name": "ElementaryTypeName",
-                        "src": "1230:7:1"
+                        "src": "1230:7:0"
                       }
                     ],
-                    "id": 137,
+                    "id": 80,
                     "name": "ArrayTypeName",
-                    "src": "1230:9:1"
+                    "src": "1230:9:0"
                   }
                 ],
-                "id": 138,
+                "id": 81,
                 "name": "Mapping",
-                "src": "1214:26:1"
+                "src": "1214:26:0"
               }
             ],
-            "id": 139,
+            "id": 82,
             "name": "VariableDeclaration",
-            "src": "1214:41:1"
+            "src": "1214:41:0"
           },
           {
             "attributes": {
               "constant": false,
               "name": "hasPokemonMap",
-              "scope": 244,
+              "scope": 187,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(bytes32 => bool)",
@@ -1057,28 +1057,28 @@
                       "name": "bytes32",
                       "type": "bytes32"
                     },
-                    "id": 140,
+                    "id": 83,
                     "name": "ElementaryTypeName",
-                    "src": "1418:7:1"
+                    "src": "1418:7:0"
                   },
                   {
                     "attributes": {
                       "name": "bool",
                       "type": "bool"
                     },
-                    "id": 141,
+                    "id": 84,
                     "name": "ElementaryTypeName",
-                    "src": "1429:4:1"
+                    "src": "1429:4:0"
                   }
                 ],
-                "id": 142,
+                "id": 85,
                 "name": "Mapping",
-                "src": "1410:24:1"
+                "src": "1410:24:0"
               }
             ],
-            "id": 143,
+            "id": 86,
             "name": "VariableDeclaration",
-            "src": "1410:38:1"
+            "src": "1410:38:0"
           },
           {
             "attributes": {
@@ -1090,7 +1090,7 @@
               ],
               "name": "hasPokemon",
               "payable": false,
-              "scope": 244,
+              "scope": 187,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "internal"
@@ -1102,7 +1102,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "person",
-                      "scope": 160,
+                      "scope": 103,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -1115,20 +1115,20 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 144,
+                        "id": 87,
                         "name": "ElementaryTypeName",
-                        "src": "1635:7:1"
+                        "src": "1635:7:0"
                       }
                     ],
-                    "id": 145,
+                    "id": 88,
                     "name": "VariableDeclaration",
-                    "src": "1635:14:1"
+                    "src": "1635:14:0"
                   },
                   {
                     "attributes": {
                       "constant": false,
                       "name": "pokemon",
-                      "scope": 160,
+                      "scope": 103,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "enum Pokemons.Pokemon",
@@ -1140,22 +1140,22 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "Pokemon",
-                          "referencedDeclaration": 91,
+                          "referencedDeclaration": 34,
                           "type": "enum Pokemons.Pokemon"
                         },
-                        "id": 146,
+                        "id": 89,
                         "name": "UserDefinedTypeName",
-                        "src": "1651:7:1"
+                        "src": "1651:7:0"
                       }
                     ],
-                    "id": 147,
+                    "id": 90,
                     "name": "VariableDeclaration",
-                    "src": "1651:15:1"
+                    "src": "1651:15:0"
                   }
                 ],
-                "id": 148,
+                "id": 91,
                 "name": "ParameterList",
-                "src": "1634:33:1"
+                "src": "1634:33:0"
               },
               {
                 "children": [
@@ -1163,7 +1163,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 160,
+                      "scope": 103,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -1176,25 +1176,25 @@
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 149,
+                        "id": 92,
                         "name": "ElementaryTypeName",
-                        "src": "1691:4:1"
+                        "src": "1691:4:0"
                       }
                     ],
-                    "id": 150,
+                    "id": 93,
                     "name": "VariableDeclaration",
-                    "src": "1691:4:1"
+                    "src": "1691:4:0"
                   }
                 ],
-                "id": 151,
+                "id": 94,
                 "name": "ParameterList",
-                "src": "1690:6:1"
+                "src": "1690:6:0"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 151
+                      "functionReturnParameters": 94
                     },
                     "children": [
                       {
@@ -1213,13 +1213,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 143,
+                              "referencedDeclaration": 86,
                               "type": "mapping(bytes32 => bool)",
                               "value": "hasPokemonMap"
                             },
-                            "id": 152,
+                            "id": 95,
                             "name": "Identifier",
-                            "src": "1715:13:1"
+                            "src": "1715:13:0"
                           },
                           {
                             "attributes": {
@@ -1244,20 +1244,20 @@
                                       "typeString": "address"
                                     },
                                     {
-                                      "typeIdentifier": "t_enum$_Pokemon_$91",
+                                      "typeIdentifier": "t_enum$_Pokemon_$34",
                                       "typeString": "enum Pokemons.Pokemon"
                                     }
                                   ],
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 250,
+                                  "referencedDeclaration": 193,
                                   "type": "function () pure returns (bytes32)",
                                   "value": "keccak256"
                                 },
-                                "id": 153,
+                                "id": 96,
                                 "name": "Identifier",
-                                "src": "1729:9:1"
+                                "src": "1729:9:0"
                               },
                               {
                                 "attributes": {
@@ -1265,13 +1265,13 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 145,
+                                  "referencedDeclaration": 88,
                                   "type": "address",
                                   "value": "person"
                                 },
-                                "id": 154,
+                                "id": 97,
                                 "name": "Identifier",
-                                "src": "1739:6:1"
+                                "src": "1739:6:0"
                               },
                               {
                                 "attributes": {
@@ -1279,38 +1279,38 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 147,
+                                  "referencedDeclaration": 90,
                                   "type": "enum Pokemons.Pokemon",
                                   "value": "pokemon"
                                 },
-                                "id": 155,
+                                "id": 98,
                                 "name": "Identifier",
-                                "src": "1747:7:1"
+                                "src": "1747:7:0"
                               }
                             ],
-                            "id": 156,
+                            "id": 99,
                             "name": "FunctionCall",
-                            "src": "1729:26:1"
+                            "src": "1729:26:0"
                           }
                         ],
-                        "id": 157,
+                        "id": 100,
                         "name": "IndexAccess",
-                        "src": "1715:41:1"
+                        "src": "1715:41:0"
                       }
                     ],
-                    "id": 158,
+                    "id": 101,
                     "name": "Return",
-                    "src": "1708:48:1"
+                    "src": "1708:48:0"
                   }
                 ],
-                "id": 159,
+                "id": 102,
                 "name": "Block",
-                "src": "1697:67:1"
+                "src": "1697:67:0"
               }
             ],
-            "id": 160,
+            "id": 103,
             "name": "FunctionDefinition",
-            "src": "1615:149:1"
+            "src": "1615:149:0"
           },
           {
             "attributes": {
@@ -1319,7 +1319,7 @@
               "isConstructor": false,
               "name": "catchPokemon",
               "payable": false,
-              "scope": 244,
+              "scope": 187,
               "stateMutability": "nonpayable",
               "superFunction": null,
               "visibility": "public"
@@ -1331,7 +1331,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "pokemon",
-                      "scope": 214,
+                      "scope": 157,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "enum Pokemons.Pokemon",
@@ -1343,22 +1343,22 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "Pokemon",
-                          "referencedDeclaration": 91,
+                          "referencedDeclaration": 34,
                           "type": "enum Pokemons.Pokemon"
                         },
-                        "id": 161,
+                        "id": 104,
                         "name": "UserDefinedTypeName",
-                        "src": "1798:7:1"
+                        "src": "1798:7:0"
                       }
                     ],
-                    "id": 162,
+                    "id": 105,
                     "name": "VariableDeclaration",
-                    "src": "1798:15:1"
+                    "src": "1798:15:0"
                   }
                 ],
-                "id": 163,
+                "id": 106,
                 "name": "ParameterList",
-                "src": "1797:17:1"
+                "src": "1797:17:0"
               },
               {
                 "attributes": {
@@ -1367,9 +1367,9 @@
                   ]
                 },
                 "children": [],
-                "id": 169,
+                "id": 112,
                 "name": "ParameterList",
-                "src": "1858:0:1"
+                "src": "1858:0:0"
               },
               {
                 "children": [
@@ -1379,13 +1379,13 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 124,
+                      "referencedDeclaration": 67,
                       "type": "modifier (address,enum Pokemons.Pokemon)",
                       "value": "canPersonCatch"
                     },
-                    "id": 164,
+                    "id": 107,
                     "name": "Identifier",
-                    "src": "1822:14:1"
+                    "src": "1822:14:0"
                   },
                   {
                     "attributes": {
@@ -1405,18 +1405,18 @@
                           "overloadedDeclarations": [
                             null
                           ],
-                          "referencedDeclaration": 256,
+                          "referencedDeclaration": 199,
                           "type": "msg",
                           "value": "msg"
                         },
-                        "id": 165,
+                        "id": 108,
                         "name": "Identifier",
-                        "src": "1837:3:1"
+                        "src": "1837:3:0"
                       }
                     ],
-                    "id": 166,
+                    "id": 109,
                     "name": "MemberAccess",
-                    "src": "1837:10:1"
+                    "src": "1837:10:0"
                   },
                   {
                     "attributes": {
@@ -1424,18 +1424,18 @@
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 162,
+                      "referencedDeclaration": 105,
                       "type": "enum Pokemons.Pokemon",
                       "value": "pokemon"
                     },
-                    "id": 167,
+                    "id": 110,
                     "name": "Identifier",
-                    "src": "1849:7:1"
+                    "src": "1849:7:0"
                   }
                 ],
-                "id": 168,
+                "id": 111,
                 "name": "ModifierInvocation",
-                "src": "1822:35:1"
+                "src": "1822:35:0"
               },
               {
                 "children": [
@@ -1460,7 +1460,7 @@
                             "attributes": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_enum$_Pokemon_$91",
+                                  "typeIdentifier": "t_enum$_Pokemon_$34",
                                   "typeString": "enum Pokemons.Pokemon"
                                 }
                               ],
@@ -1481,7 +1481,7 @@
                                   "isPure": false,
                                   "lValueRequested": false,
                                   "member_name": "pokemons",
-                                  "referencedDeclaration": 127,
+                                  "referencedDeclaration": 70,
                                   "type": "enum Pokemons.Pokemon[] storage ref"
                                 },
                                 "children": [
@@ -1501,13 +1501,13 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 134,
+                                          "referencedDeclaration": 77,
                                           "type": "mapping(address => struct Pokemons.Player storage ref)",
                                           "value": "players"
                                         },
-                                        "id": 170,
+                                        "id": 113,
                                         "name": "Identifier",
-                                        "src": "1869:7:1"
+                                        "src": "1869:7:0"
                                       },
                                       {
                                         "attributes": {
@@ -1527,33 +1527,33 @@
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 256,
+                                              "referencedDeclaration": 199,
                                               "type": "msg",
                                               "value": "msg"
                                             },
-                                            "id": 171,
+                                            "id": 114,
                                             "name": "Identifier",
-                                            "src": "1877:3:1"
+                                            "src": "1877:3:0"
                                           }
                                         ],
-                                        "id": 172,
+                                        "id": 115,
                                         "name": "MemberAccess",
-                                        "src": "1877:10:1"
+                                        "src": "1877:10:0"
                                       }
                                     ],
-                                    "id": 173,
+                                    "id": 116,
                                     "name": "IndexAccess",
-                                    "src": "1869:19:1"
+                                    "src": "1869:19:0"
                                   }
                                 ],
-                                "id": 174,
+                                "id": 117,
                                 "name": "MemberAccess",
-                                "src": "1869:28:1"
+                                "src": "1869:28:0"
                               }
                             ],
-                            "id": 175,
+                            "id": 118,
                             "name": "MemberAccess",
-                            "src": "1869:33:1"
+                            "src": "1869:33:0"
                           },
                           {
                             "attributes": {
@@ -1561,23 +1561,23 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 162,
+                              "referencedDeclaration": 105,
                               "type": "enum Pokemons.Pokemon",
                               "value": "pokemon"
                             },
-                            "id": 176,
+                            "id": 119,
                             "name": "Identifier",
-                            "src": "1903:7:1"
+                            "src": "1903:7:0"
                           }
                         ],
-                        "id": 177,
+                        "id": 120,
                         "name": "FunctionCall",
-                        "src": "1869:42:1"
+                        "src": "1869:42:0"
                       }
                     ],
-                    "id": 178,
+                    "id": 121,
                     "name": "ExpressionStatement",
-                    "src": "1869:42:1"
+                    "src": "1869:42:0"
                   },
                   {
                     "children": [
@@ -1600,7 +1600,7 @@
                               "isPure": false,
                               "lValueRequested": true,
                               "member_name": "lastCatch",
-                              "referencedDeclaration": 129,
+                              "referencedDeclaration": 72,
                               "type": "uint256"
                             },
                             "children": [
@@ -1620,13 +1620,13 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 134,
+                                      "referencedDeclaration": 77,
                                       "type": "mapping(address => struct Pokemons.Player storage ref)",
                                       "value": "players"
                                     },
-                                    "id": 179,
+                                    "id": 122,
                                     "name": "Identifier",
-                                    "src": "1922:7:1"
+                                    "src": "1922:7:0"
                                   },
                                   {
                                     "attributes": {
@@ -1646,28 +1646,28 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 256,
+                                          "referencedDeclaration": 199,
                                           "type": "msg",
                                           "value": "msg"
                                         },
-                                        "id": 180,
+                                        "id": 123,
                                         "name": "Identifier",
-                                        "src": "1930:3:1"
+                                        "src": "1930:3:0"
                                       }
                                     ],
-                                    "id": 181,
+                                    "id": 124,
                                     "name": "MemberAccess",
-                                    "src": "1930:10:1"
+                                    "src": "1930:10:0"
                                   }
                                 ],
-                                "id": 182,
+                                "id": 125,
                                 "name": "IndexAccess",
-                                "src": "1922:19:1"
+                                "src": "1922:19:0"
                               }
                             ],
-                            "id": 183,
+                            "id": 126,
                             "name": "MemberAccess",
-                            "src": "1922:29:1"
+                            "src": "1922:29:0"
                           },
                           {
                             "attributes": {
@@ -1675,23 +1675,23 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 258,
+                              "referencedDeclaration": 201,
                               "type": "uint256",
                               "value": "now"
                             },
-                            "id": 184,
+                            "id": 127,
                             "name": "Identifier",
-                            "src": "1954:3:1"
+                            "src": "1954:3:0"
                           }
                         ],
-                        "id": 185,
+                        "id": 128,
                         "name": "Assignment",
-                        "src": "1922:35:1"
+                        "src": "1922:35:0"
                       }
                     ],
-                    "id": 186,
+                    "id": 129,
                     "name": "ExpressionStatement",
-                    "src": "1922:35:1"
+                    "src": "1922:35:0"
                   },
                   {
                     "children": [
@@ -1743,13 +1743,13 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 139,
+                                      "referencedDeclaration": 82,
                                       "type": "mapping(uint256 => address[] storage ref)",
                                       "value": "pokemonHolders"
                                     },
-                                    "id": 187,
+                                    "id": 130,
                                     "name": "Identifier",
-                                    "src": "1978:14:1"
+                                    "src": "1978:14:0"
                                   },
                                   {
                                     "attributes": {
@@ -1770,7 +1770,7 @@
                                         "attributes": {
                                           "argumentTypes": [
                                             {
-                                              "typeIdentifier": "t_enum$_Pokemon_$91",
+                                              "typeIdentifier": "t_enum$_Pokemon_$34",
                                               "typeString": "enum Pokemons.Pokemon"
                                             }
                                           ],
@@ -1781,9 +1781,9 @@
                                           "type": "type(uint256)",
                                           "value": "uint"
                                         },
-                                        "id": 188,
+                                        "id": 131,
                                         "name": "ElementaryTypeNameExpression",
-                                        "src": "1993:4:1"
+                                        "src": "1993:4:0"
                                       },
                                       {
                                         "attributes": {
@@ -1791,28 +1791,28 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 162,
+                                          "referencedDeclaration": 105,
                                           "type": "enum Pokemons.Pokemon",
                                           "value": "pokemon"
                                         },
-                                        "id": 189,
+                                        "id": 132,
                                         "name": "Identifier",
-                                        "src": "1998:7:1"
+                                        "src": "1998:7:0"
                                       }
                                     ],
-                                    "id": 190,
+                                    "id": 133,
                                     "name": "FunctionCall",
-                                    "src": "1993:13:1"
+                                    "src": "1993:13:0"
                                   }
                                 ],
-                                "id": 191,
+                                "id": 134,
                                 "name": "IndexAccess",
-                                "src": "1978:29:1"
+                                "src": "1978:29:0"
                               }
                             ],
-                            "id": 192,
+                            "id": 135,
                             "name": "MemberAccess",
-                            "src": "1978:34:1"
+                            "src": "1978:34:0"
                           },
                           {
                             "attributes": {
@@ -1832,28 +1832,28 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 256,
+                                  "referencedDeclaration": 199,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 193,
+                                "id": 136,
                                 "name": "Identifier",
-                                "src": "2013:3:1"
+                                "src": "2013:3:0"
                               }
                             ],
-                            "id": 194,
+                            "id": 137,
                             "name": "MemberAccess",
-                            "src": "2013:10:1"
+                            "src": "2013:10:0"
                           }
                         ],
-                        "id": 195,
+                        "id": 138,
                         "name": "FunctionCall",
-                        "src": "1978:46:1"
+                        "src": "1978:46:0"
                       }
                     ],
-                    "id": 196,
+                    "id": 139,
                     "name": "ExpressionStatement",
-                    "src": "1978:46:1"
+                    "src": "1978:46:0"
                   },
                   {
                     "children": [
@@ -1884,13 +1884,13 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 143,
+                                  "referencedDeclaration": 86,
                                   "type": "mapping(bytes32 => bool)",
                                   "value": "hasPokemonMap"
                                 },
-                                "id": 197,
+                                "id": 140,
                                 "name": "Identifier",
-                                "src": "2045:13:1"
+                                "src": "2045:13:0"
                               },
                               {
                                 "attributes": {
@@ -1915,20 +1915,20 @@
                                           "typeString": "address"
                                         },
                                         {
-                                          "typeIdentifier": "t_enum$_Pokemon_$91",
+                                          "typeIdentifier": "t_enum$_Pokemon_$34",
                                           "typeString": "enum Pokemons.Pokemon"
                                         }
                                       ],
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 250,
+                                      "referencedDeclaration": 193,
                                       "type": "function () pure returns (bytes32)",
                                       "value": "keccak256"
                                     },
-                                    "id": 198,
+                                    "id": 141,
                                     "name": "Identifier",
-                                    "src": "2059:9:1"
+                                    "src": "2059:9:0"
                                   },
                                   {
                                     "attributes": {
@@ -1948,18 +1948,18 @@
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 256,
+                                          "referencedDeclaration": 199,
                                           "type": "msg",
                                           "value": "msg"
                                         },
-                                        "id": 199,
+                                        "id": 142,
                                         "name": "Identifier",
-                                        "src": "2069:3:1"
+                                        "src": "2069:3:0"
                                       }
                                     ],
-                                    "id": 200,
+                                    "id": 143,
                                     "name": "MemberAccess",
-                                    "src": "2069:10:1"
+                                    "src": "2069:10:0"
                                   },
                                   {
                                     "attributes": {
@@ -1967,23 +1967,23 @@
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 162,
+                                      "referencedDeclaration": 105,
                                       "type": "enum Pokemons.Pokemon",
                                       "value": "pokemon"
                                     },
-                                    "id": 201,
+                                    "id": 144,
                                     "name": "Identifier",
-                                    "src": "2081:7:1"
+                                    "src": "2081:7:0"
                                   }
                                 ],
-                                "id": 202,
+                                "id": 145,
                                 "name": "FunctionCall",
-                                "src": "2059:30:1"
+                                "src": "2059:30:0"
                               }
                             ],
-                            "id": 203,
+                            "id": 146,
                             "name": "IndexAccess",
-                            "src": "2045:45:1"
+                            "src": "2045:45:0"
                           },
                           {
                             "attributes": {
@@ -1998,19 +1998,19 @@
                               "type": "bool",
                               "value": "true"
                             },
-                            "id": 204,
+                            "id": 147,
                             "name": "Literal",
-                            "src": "2093:4:1"
+                            "src": "2093:4:0"
                           }
                         ],
-                        "id": 205,
+                        "id": 148,
                         "name": "Assignment",
-                        "src": "2045:52:1"
+                        "src": "2045:52:0"
                       }
                     ],
-                    "id": 206,
+                    "id": 149,
                     "name": "ExpressionStatement",
-                    "src": "2045:52:1"
+                    "src": "2045:52:0"
                   },
                   {
                     "children": [
@@ -2037,20 +2037,20 @@
                                   "typeString": "address"
                                 },
                                 {
-                                  "typeIdentifier": "t_enum$_Pokemon_$91",
+                                  "typeIdentifier": "t_enum$_Pokemon_$34",
                                   "typeString": "enum Pokemons.Pokemon"
                                 }
                               ],
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 97,
+                              "referencedDeclaration": 40,
                               "type": "function (address,enum Pokemons.Pokemon)",
                               "value": "LogPokemonCaught"
                             },
-                            "id": 207,
+                            "id": 150,
                             "name": "Identifier",
-                            "src": "2118:16:1"
+                            "src": "2118:16:0"
                           },
                           {
                             "attributes": {
@@ -2070,18 +2070,18 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 256,
+                                  "referencedDeclaration": 199,
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 208,
+                                "id": 151,
                                 "name": "Identifier",
-                                "src": "2135:3:1"
+                                "src": "2135:3:0"
                               }
                             ],
-                            "id": 209,
+                            "id": 152,
                             "name": "MemberAccess",
-                            "src": "2135:10:1"
+                            "src": "2135:10:0"
                           },
                           {
                             "attributes": {
@@ -2089,33 +2089,33 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 162,
+                              "referencedDeclaration": 105,
                               "type": "enum Pokemons.Pokemon",
                               "value": "pokemon"
                             },
-                            "id": 210,
+                            "id": 153,
                             "name": "Identifier",
-                            "src": "2147:7:1"
+                            "src": "2147:7:0"
                           }
                         ],
-                        "id": 211,
+                        "id": 154,
                         "name": "FunctionCall",
-                        "src": "2118:37:1"
+                        "src": "2118:37:0"
                       }
                     ],
-                    "id": 212,
+                    "id": 155,
                     "name": "ExpressionStatement",
-                    "src": "2118:37:1"
+                    "src": "2118:37:0"
                   }
                 ],
-                "id": 213,
+                "id": 156,
                 "name": "Block",
-                "src": "1858:305:1"
+                "src": "1858:305:0"
               }
             ],
-            "id": 214,
+            "id": 157,
             "name": "FunctionDefinition",
-            "src": "1776:387:1"
+            "src": "1776:387:0"
           },
           {
             "attributes": {
@@ -2127,7 +2127,7 @@
               ],
               "name": "getPokemonsByPerson",
               "payable": false,
-              "scope": 244,
+              "scope": 187,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -2139,7 +2139,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "person",
-                      "scope": 228,
+                      "scope": 171,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -2152,19 +2152,19 @@
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 215,
+                        "id": 158,
                         "name": "ElementaryTypeName",
-                        "src": "2204:7:1"
+                        "src": "2204:7:0"
                       }
                     ],
-                    "id": 216,
+                    "id": 159,
                     "name": "VariableDeclaration",
-                    "src": "2204:14:1"
+                    "src": "2204:14:0"
                   }
                 ],
-                "id": 217,
+                "id": 160,
                 "name": "ParameterList",
-                "src": "2203:16:1"
+                "src": "2203:16:0"
               },
               {
                 "children": [
@@ -2172,7 +2172,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 228,
+                      "scope": 171,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "enum Pokemons.Pokemon[] memory",
@@ -2190,33 +2190,33 @@
                             "attributes": {
                               "contractScope": null,
                               "name": "Pokemon",
-                              "referencedDeclaration": 91,
+                              "referencedDeclaration": 34,
                               "type": "enum Pokemons.Pokemon"
                             },
-                            "id": 218,
+                            "id": 161,
                             "name": "UserDefinedTypeName",
-                            "src": "2241:7:1"
+                            "src": "2241:7:0"
                           }
                         ],
-                        "id": 219,
+                        "id": 162,
                         "name": "ArrayTypeName",
-                        "src": "2241:9:1"
+                        "src": "2241:9:0"
                       }
                     ],
-                    "id": 220,
+                    "id": 163,
                     "name": "VariableDeclaration",
-                    "src": "2241:9:1"
+                    "src": "2241:9:0"
                   }
                 ],
-                "id": 221,
+                "id": 164,
                 "name": "ParameterList",
-                "src": "2240:11:1"
+                "src": "2240:11:0"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 221
+                      "functionReturnParameters": 164
                     },
                     "children": [
                       {
@@ -2227,7 +2227,7 @@
                           "isPure": false,
                           "lValueRequested": false,
                           "member_name": "pokemons",
-                          "referencedDeclaration": 127,
+                          "referencedDeclaration": 70,
                           "type": "enum Pokemons.Pokemon[] storage ref"
                         },
                         "children": [
@@ -2247,13 +2247,13 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 134,
+                                  "referencedDeclaration": 77,
                                   "type": "mapping(address => struct Pokemons.Player storage ref)",
                                   "value": "players"
                                 },
-                                "id": 222,
+                                "id": 165,
                                 "name": "Identifier",
-                                "src": "2270:7:1"
+                                "src": "2270:7:0"
                               },
                               {
                                 "attributes": {
@@ -2261,38 +2261,38 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 216,
+                                  "referencedDeclaration": 159,
                                   "type": "address",
                                   "value": "person"
                                 },
-                                "id": 223,
+                                "id": 166,
                                 "name": "Identifier",
-                                "src": "2278:6:1"
+                                "src": "2278:6:0"
                               }
                             ],
-                            "id": 224,
+                            "id": 167,
                             "name": "IndexAccess",
-                            "src": "2270:15:1"
+                            "src": "2270:15:0"
                           }
                         ],
-                        "id": 225,
+                        "id": 168,
                         "name": "MemberAccess",
-                        "src": "2270:24:1"
+                        "src": "2270:24:0"
                       }
                     ],
-                    "id": 226,
+                    "id": 169,
                     "name": "Return",
-                    "src": "2263:31:1"
+                    "src": "2263:31:0"
                   }
                 ],
-                "id": 227,
+                "id": 170,
                 "name": "Block",
-                "src": "2252:50:1"
+                "src": "2252:50:0"
               }
             ],
-            "id": 228,
+            "id": 171,
             "name": "FunctionDefinition",
-            "src": "2175:127:1"
+            "src": "2175:127:0"
           },
           {
             "attributes": {
@@ -2304,7 +2304,7 @@
               ],
               "name": "getPokemonHolders",
               "payable": false,
-              "scope": 244,
+              "scope": 187,
               "stateMutability": "view",
               "superFunction": null,
               "visibility": "public"
@@ -2316,7 +2316,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "pokemon",
-                      "scope": 243,
+                      "scope": 186,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "enum Pokemons.Pokemon",
@@ -2328,22 +2328,22 @@
                         "attributes": {
                           "contractScope": null,
                           "name": "Pokemon",
-                          "referencedDeclaration": 91,
+                          "referencedDeclaration": 34,
                           "type": "enum Pokemons.Pokemon"
                         },
-                        "id": 229,
+                        "id": 172,
                         "name": "UserDefinedTypeName",
-                        "src": "2341:7:1"
+                        "src": "2341:7:0"
                       }
                     ],
-                    "id": 230,
+                    "id": 173,
                     "name": "VariableDeclaration",
-                    "src": "2341:15:1"
+                    "src": "2341:15:0"
                   }
                 ],
-                "id": 231,
+                "id": 174,
                 "name": "ParameterList",
-                "src": "2340:17:1"
+                "src": "2340:17:0"
               },
               {
                 "children": [
@@ -2351,7 +2351,7 @@
                     "attributes": {
                       "constant": false,
                       "name": "",
-                      "scope": 243,
+                      "scope": 186,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address[] memory",
@@ -2370,30 +2370,30 @@
                               "name": "address",
                               "type": "address"
                             },
-                            "id": 232,
+                            "id": 175,
                             "name": "ElementaryTypeName",
-                            "src": "2379:7:1"
+                            "src": "2379:7:0"
                           }
                         ],
-                        "id": 233,
+                        "id": 176,
                         "name": "ArrayTypeName",
-                        "src": "2379:9:1"
+                        "src": "2379:9:0"
                       }
                     ],
-                    "id": 234,
+                    "id": 177,
                     "name": "VariableDeclaration",
-                    "src": "2379:9:1"
+                    "src": "2379:9:0"
                   }
                 ],
-                "id": 235,
+                "id": 178,
                 "name": "ParameterList",
-                "src": "2378:11:1"
+                "src": "2378:11:0"
               },
               {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 235
+                      "functionReturnParameters": 178
                     },
                     "children": [
                       {
@@ -2412,13 +2412,13 @@
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 139,
+                              "referencedDeclaration": 82,
                               "type": "mapping(uint256 => address[] storage ref)",
                               "value": "pokemonHolders"
                             },
-                            "id": 236,
+                            "id": 179,
                             "name": "Identifier",
-                            "src": "2408:14:1"
+                            "src": "2408:14:0"
                           },
                           {
                             "attributes": {
@@ -2439,7 +2439,7 @@
                                 "attributes": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_enum$_Pokemon_$91",
+                                      "typeIdentifier": "t_enum$_Pokemon_$34",
                                       "typeString": "enum Pokemons.Pokemon"
                                     }
                                   ],
@@ -2450,9 +2450,9 @@
                                   "type": "type(uint256)",
                                   "value": "uint"
                                 },
-                                "id": 237,
+                                "id": 180,
                                 "name": "ElementaryTypeNameExpression",
-                                "src": "2423:4:1"
+                                "src": "2423:4:0"
                               },
                               {
                                 "attributes": {
@@ -2460,54 +2460,60 @@
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 230,
+                                  "referencedDeclaration": 173,
                                   "type": "enum Pokemons.Pokemon",
                                   "value": "pokemon"
                                 },
-                                "id": 238,
+                                "id": 181,
                                 "name": "Identifier",
-                                "src": "2428:7:1"
+                                "src": "2428:7:0"
                               }
                             ],
-                            "id": 239,
+                            "id": 182,
                             "name": "FunctionCall",
-                            "src": "2423:13:1"
+                            "src": "2423:13:0"
                           }
                         ],
-                        "id": 240,
+                        "id": 183,
                         "name": "IndexAccess",
-                        "src": "2408:29:1"
+                        "src": "2408:29:0"
                       }
                     ],
-                    "id": 241,
+                    "id": 184,
                     "name": "Return",
-                    "src": "2401:36:1"
+                    "src": "2401:36:0"
                   }
                 ],
-                "id": 242,
+                "id": 185,
                 "name": "Block",
-                "src": "2390:55:1"
+                "src": "2390:55:0"
               }
             ],
-            "id": 243,
+            "id": 186,
             "name": "FunctionDefinition",
-            "src": "2314:131:1"
+            "src": "2314:131:0"
           }
         ],
-        "id": 244,
+        "id": 187,
         "name": "ContractDefinition",
-        "src": "28:2420:1"
+        "src": "28:2420:0"
       }
     ],
-    "id": 245,
+    "id": 188,
     "name": "SourceUnit",
-    "src": "0:2448:1"
+    "src": "0:2448:0"
   },
   "compiler": {
     "name": "solc",
     "version": "0.4.19+commit.c4cbbb05.Emscripten.clang"
   },
-  "networks": {},
+  "networks": {
+    "1520463331887": {
+      "events": {},
+      "links": {},
+      "address": "0xd8c3389311ae0e7b657a8186d2dade4036091cc8"
+    }
+  },
   "schemaVersion": "1.0.1",
-  "updatedAt": "2018-03-07T21:59:05.475Z"
+  "updatedAt": "2018-03-07T23:02:41.907Z"
 }
