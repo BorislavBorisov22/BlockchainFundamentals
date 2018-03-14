@@ -1,0 +1,3 @@
+1. Members should not be a seperate contract but a library as it would be expensive to create new contract for each new Members
+2. modifier only member takes too much information to see of sender is a member - instead it could see if jointedAt is bigger than zero
+3. tmp variable and memberList can simply be removed as they are not used anywhere and do not seem to hold valuable information for the contract
