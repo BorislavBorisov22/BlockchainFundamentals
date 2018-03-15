@@ -34,7 +34,7 @@ contract Voting {
     mapping (address => uint) memberToImportancePoints;
     mapping (address => VotingLib.Proposal) proposals;
     
-    function Votin() public {
+    function Voting() public {
         owner = msg.sender;
     }
     
@@ -71,6 +71,7 @@ contract Voting {
         require(proposals[msg.sender].isApproved(totalImportancePoints));
         require(proposals[msg.sender].amount <= address(this).balance);
         
+        proposals[msg.sender].close();
         msg.sender.transfer(proposals[msg.sender].amount);
     }
 }
