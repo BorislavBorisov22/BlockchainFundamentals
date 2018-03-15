@@ -7,6 +7,7 @@ library VotingLib {
         uint amount;
         uint votes;
         bool closed;
+        bool exists;
         mapping(address => bool) memberVoted;
     }
     
@@ -60,10 +61,12 @@ contract Voting {
     function propose(address receiver, uint amount) public onlyOwner {
         require(address(this).balance >= amount);
         
-        proposals[receiver] = VotingLib.Proposal(receiver, amount, 0, false);
+        proposals[receiver] = VotingLib.Proposal(receiver, amount, 0, false, true);
     }
     
     function vote(address voteFor) public onlyMember {
+        require(proposals[voteFor].exists && !proposals[voteFor].closed);
+
         proposals[voteFor].vote(msg.sender, memberToImportancePoints[msg.sender]);
     }
     
