@@ -1,4 +1,4 @@
-pragma solidity 0.4.21;
+pragma solidity 0.4.19;
 
 library SafeMath {
 	function mul(uint256 _a, uint256 _b) internal pure returns (uint256) {
@@ -48,7 +48,7 @@ contract Owned {
     }
 }
 
-contract HomeworkCoin is Owned {
+contract ICO is Owned {
     using SafeMath for uint;
     
     uint public constant presaleDuration = 1 years / 4;
@@ -93,7 +93,7 @@ contract HomeworkCoin is Owned {
         ownerToTokens[msg.sender].sub(amount);
         ownerToTokens[receiver].add(amount);
 
-       emit TokenTransfer(msg.sender, receiver, amount);
+       TokenTransfer(msg.sender, receiver, amount);
     }
 
     function buyToken() public payable {
