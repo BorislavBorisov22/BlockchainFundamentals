@@ -56,7 +56,7 @@ contract ICO is Owned {
     uint public constant tokenPresalePrice = 1 ether;
     uint public constant tokenStagePrice = 2 ether;
     
-    uint public icoStartedAt = 0;
+    uint public icoStartedAt = now;
     
     mapping(address => uint) public ownerToTokens;
 
@@ -90,10 +90,10 @@ contract ICO is Owned {
     }
 
     function transferToken(uint amount, address receiver) public hasEnoughFunds(msg.sender, amount) saleOver {
-        ownerToTokens[msg.sender].sub(amount);
-        ownerToTokens[receiver].add(amount);
-
-       TokenTransfer(msg.sender, receiver, amount);
+        ownerToTokens[msg.sender] = ownerToTokens[msg.sender].sub(amount);
+        ownerToTokens[receiver] = ownerToTokens[receiver].add(amount);
+        
+        TokenTransfer(msg.sender, receiver, amount);
     }
 
     function buyToken() public payable {

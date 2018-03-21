@@ -1,7 +1,7 @@
-import latestTime from './latestTime';
+const latesTime = require('./latestTime');
 
 // Increases testrpc time by the passed duration in seconds
-export default function increaseTime(duration) {
+exports.increaseTime = function(duration) {
     const id = Date.now();
 
     return new Promise((resolve, reject) => {
@@ -31,14 +31,14 @@ export default function increaseTime(duration) {
  *
  * @param target time in seconds
  */
-export function increaseTimeTo(target) {
+exports.increseTimeTo = function(target) {
     let now = latestTime();
     if (target < now) throw Error(`Cannot increase current time(${now}) to a moment in the past(${target})`);
     let diff = target - now;
     return increaseTime(diff);
 }
 
-export const duration = {
+exports.duration = {
     seconds: function(val) { return val; },
     minutes: function(val) { return val * this.seconds(60); },
     hours: function(val) { return val * this.minutes(60); },
