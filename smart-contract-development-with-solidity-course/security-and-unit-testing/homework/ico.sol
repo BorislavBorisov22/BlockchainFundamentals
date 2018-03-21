@@ -77,15 +77,15 @@ contract HomeworkCoin is Owned {
     }
     
     
-    function isInPresale() public returns(bool) {
-        return icoStartedAt + presaleDuration < now;
+    function isInPresale() public view returns(bool) {
+        return icoStartedAt + presaleDuration >= now;
     }
     
-    function isStageSale() public returns(bool) {
-        return icoStartedAt + presaleDuration + stageDuration < now;
+    function isStageSale() public view returns(bool) {
+        return !isInPresale() && icoStartedAt + presaleDuration + stageDuration >= now;
     }
     
-    function isSaleOver() public returns (bool) {
+    function isSaleOver() public view returns (bool) {
        return !(isInPresale() || isStageSale());
     }
 
@@ -93,7 +93,7 @@ contract HomeworkCoin is Owned {
         ownerToTokens[msg.sender].sub(amount);
         ownerToTokens[receiver].add(amount);
 
-        TokenTransfer(msg.sender, receiver, amount);
+       emit TokenTransfer(msg.sender, receiver, amount);
     }
 
     function buyToken() public payable {
@@ -105,7 +105,7 @@ contract HomeworkCoin is Owned {
         ownerToTokens[msg.sender] = tokensCount;
     }
 
-    function getTokenCurrentPrice() internal returns(uint) {
+    function getTokenCurrentPrice() internal view returns(uint) {
         return isInPresale() ? tokenPresalePrice : tokenStagePrice;
     }
 }
