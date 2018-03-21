@@ -58,26 +58,54 @@ contract HomeworkCoin is Owned {
     
     uint public icoStartedAt = 0;
     
-    mapping(address => uint) ownerToTokens;
-    
+    mapping(address => uint) public ownerToTokens;
+
+    event TokenTransfer(address from, address to, uint amount);
+
+    modifier hasEnoughFunds(address adr, uint amount) {
+        require(ownerToTokens[adr] >= amount);
+        _;
+    }
+
+    modifier saleOver {
+        require(isSaleOver());
+        _;
+    }
+
     function HomeworkCoin() public {
         icoStartedAt = now;
     }
     
     
-    function isInPresale() public {
+    function isInPresale() public returns(bool) {
         return icoStartedAt + presaleDuration < now;
     }
     
-    function isStageSale() public {
-        return icoStartedAt + presaleDuration + stageDuration
+    function isStageSale() public returns(bool) {
+        return icoStartedAt + presaleDuration + stageDuration < now;
     }
     
-    function isSaleOver() public return (bool) {
-        return !(isInPresale() || isInStageSale());
+    function isSaleOver() public returns (bool) {
+       return !(isInPresale() || isStageSale());
     }
-    
-    
-    
-    
+
+    function transferToken(uint amount, address receiver) public hasEnoughFunds(msg.sender, amount) saleOver {
+        ownerToTokens[msg.sender].sub(amount);
+        ownerToTokens[receiver].add(amount);
+
+        TokenTransfer(msg.sender, receiver, amount);
+    }
+
+    function buyToken() public payable {
+        require(!isSaleOver());
+
+        uint tokenPrice = getTokenCurrentPrice();
+        uint tokensCount = msg.value.div(tokenPrice);
+
+        ownerToTokens[msg.sender] = tokensCount;
+    }
+
+    function getTokenCurrentPrice() internal returns(uint) {
+        return isInPresale() ? tokenPresalePrice : tokenStagePrice;
+    }
 }
