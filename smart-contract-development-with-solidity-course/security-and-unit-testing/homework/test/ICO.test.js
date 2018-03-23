@@ -14,7 +14,7 @@ contract('DDNSCore', ([owner, wallet, anotherAccount]) => {
         sut = await ICO.new();
     });
 
-    it('expect contract to be in presale when contract deployed', async() => {
+    it('expect contract to be in presale when contract deployed', async () => {
         const result = await sut.isInPresale({ from: owner });
         assert(result === true);
     });
@@ -26,13 +26,13 @@ contract('DDNSCore', ([owner, wallet, anotherAccount]) => {
     });
 
 
-    it('expect contract to be in stage sale when presale ends', async() => {
+    it('expect contract to be in stage sale when presale ends', async () => {
         await increaseTime(duration.weeks(14));
         const result = await sut.isStageSale();
         assert(result === true);
     });
 
-    it('expect isStageSale to return false when stage sale phase passed', async() => {
+    it('expect isStageSale to return false when stage sale phase passed', async () => {
         await increaseTime(duration.weeks(30));
         const result = await sut.isStageSale();
         assert(!result);
@@ -44,19 +44,19 @@ contract('DDNSCore', ([owner, wallet, anotherAccount]) => {
         assert(result === true);
     });
 
-    it('expect isSaleOver to return false when presale has  not passed', async() => {
+    it('expect isSaleOver to return false when presale has  not passed', async () => {
         const result = await sut.isSaleOver();
         assert(!result);
     });
 
-    it('expect isSaleOver to return false when presale has not passed', async() => {
+    it('expect isSaleOver to return false when presale has not passed', async () => {
         await increaseTime(duration.weeks(14));
         const result = await sut.isSaleOver();
         assert(!result);
     });
 
 
-    it('expect to buy token at price 1 eth per token in presale phase', async() => {
+    it('expect to buy token at price 1 eth per token in presale phase', async () => {
         const price = web3.toWei(2, 'ether');
         await sut.buyToken({ from: owner, value: price });
 
@@ -64,7 +64,7 @@ contract('DDNSCore', ([owner, wallet, anotherAccount]) => {
         assert(Number(tokens.toString()) === 2);
     });
 
-    it('expect ot buy tokens at price 2 eth per token in stage phase', async() => {
+    it('expect ot buy tokens at price 2 eth per token in stage phase', async () => {
         await increaseTime(duration.weeks(14));
         const price = web3.toWei(2, 'ether');
         await sut.buyToken({ from: owner, value: price });
@@ -73,7 +73,7 @@ contract('DDNSCore', ([owner, wallet, anotherAccount]) => {
         assert(Number(tokens.toString()) === 1);
     });
 
-    it('expect to be able to transfer tokens correctly when sale is over', async() => {
+    it('expect to be able to transfer tokens correctly when sale is over', async () => {
         const price = web3.toWei(2, 'ether');
         await sut.buyToken({ from: owner, value: price });
         await increaseTime(duration.weeks(30));
@@ -87,7 +87,7 @@ contract('DDNSCore', ([owner, wallet, anotherAccount]) => {
         assert(Number(receiverTokens.toString()) === 1);
     });
 
-    it('expect to throw when user tries to send more tokens than he owns', async() => {
+    it('expect to throw when user tries to send more tokens than he owns', async () => {
         const price = web3.toWei(2, 'ether');
         await sut.buyToken({ from: owner, value: price });
         await increaseTime(duration.weeks(30));
@@ -98,7 +98,7 @@ contract('DDNSCore', ([owner, wallet, anotherAccount]) => {
     });
 
 
-    it('expect to throw when user tries to send tokens while still token is in sale', async() => {
+    it('expect to throw when user tries to send tokens while still token is in sale', async () => {
         const price = web3.toWei(2, 'ether');
         const result = sut.buyToken({ from: owner, value: price });
         assertRevert(result);
